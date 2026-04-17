@@ -1,45 +1,30 @@
-import { ArrowRight, Award, BriefcaseBusiness, Building2, Globe2, GraduationCap, Map, TrendingUp } from "lucide-react";
-
 export default function MikeHamiltonVETConsulting() {
   const services = [
     {
       title: "Small Business & Tender Advisory",
       description:
         "Practical support for small and medium enterprises to build capability, strengthen commercial positioning, and compete with confidence. Includes guidance on tender responses, grant applications, and negotiation strategies to improve success rates.",
-      icon: BriefcaseBusiness,
     },
     {
       title: "RTO Performance & Commercial Advisory",
       description:
         "Support RTOs to strengthen performance, improve commercial outcomes, and enhance financial sustainability, including revenue diversification and contract growth.",
-      icon: TrendingUp,
     },
     {
       title: "Remote & Regional VET Leadership",
       description:
         "Specialist expertise in delivering high-impact VET across remote, regional and Indigenous communities. Deep understanding of NT conditions, workforce challenges, and service delivery models that actually work on the ground.",
-      icon: Map,
     },
     {
       title: "Government Strategy & Funding Alignment",
       description:
         "Position RTOs to win and retain government funding under the National Skills Agreement, Fee-Free TAFE and jurisdictional priorities, aligning delivery with workforce demand and policy direction.",
-      icon: Building2,
     },
     {
       title: "Executive Advisory & Board Support",
       description:
         "Trusted advisor to CEOs, Boards and Executives on governance, performance, reform, and large-scale education delivery in complex environments.",
-      icon: BriefcaseBusiness,
     },
-  ];
-
-  const differentiators = [
-    "Proven CEO-level delivery in complex VET environments",
-    "Deep NT, regional, remote and Oceania-relevant expertise",
-    "Strong government and ministerial relationships",
-    "Commercial growth mindset within public systems",
-    "National credibility and award-winning outcomes",
   ];
 
   return (
@@ -88,18 +73,12 @@ export default function MikeHamiltonVETConsulting() {
         </div>
 
         <div className="mt-10 grid gap-6 md:grid-cols-2">
-          {services.map((service) => {
-            const Icon = service.icon;
-            return (
-              <div key={service.title} className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-xl">
-                <div className="flex items-center gap-4">
-                  <Icon className="h-5 w-5 text-cyan-300" />
-                  <h3 className="text-xl font-semibold">{service.title}</h3>
-                </div>
-                <p className="mt-5 text-slate-300">{service.description}</p>
-              </div>
-            );
-          })}
+          {services.map((service) => (
+            <div key={service.title} className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-xl">
+              <h3 className="text-xl font-semibold">{service.title}</h3>
+              <p className="mt-5 text-slate-300">{service.description}</p>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -118,7 +97,6 @@ export default function MikeHamiltonVETConsulting() {
               className="inline-flex items-center gap-2 rounded-2xl bg-white px-8 py-4 text-sm font-semibold text-slate-950"
             >
               Book a Consultation
-              <ArrowRight className="h-4 w-4" />
             </a>
           </div>
         </div>
@@ -133,4 +111,3 @@ export default function MikeHamiltonVETConsulting() {
     </div>
   );
 }
-
