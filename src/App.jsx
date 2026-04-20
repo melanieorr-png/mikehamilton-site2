@@ -35,7 +35,7 @@ export default function App() {
         <img
           src="/logo4.png"
           alt="Mike Hamilton logo"
-          className="h-16 md:h-20"
+          className="h-28 md:h-40"
         />
       </div>
 
