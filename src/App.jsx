@@ -42,7 +42,7 @@ export default function App() {
           {/* RIGHT: LOGO */}
           <a href="/">
             <img
-              src="/logo3.PNG"
+              src="/logo4.png"
               alt="Mike Hamilton logo"
               className="h-10 md:h-12"
             />
