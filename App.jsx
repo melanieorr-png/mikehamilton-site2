@@ -1,24 +1,24 @@
 export default function MikeHamiltonVETConsulting() {
   const services = [
     {
-      title: "Small Business & Tender Advisory",
+      title: "Small Business & Tender/Grant Advisory",
       description:
         "Practical support for small and medium enterprises to build capability, strengthen commercial positioning, and compete with confidence. Includes guidance on tender responses, grant applications, and negotiation strategies to improve success rates.",
     },
     {
-      title: "RTO Performance & Commercial Advisory",
+      title: "Business or RTO Performance & Commercial Advisory",
       description:
-        "Support RTOs to strengthen performance, improve commercial outcomes, and enhance financial sustainability, including revenue diversification and contract growth.",
+        "Support business and RTOs to strengthen performance, improve commercial outcomes, and enhance financial sustainability, including revenue diversification and contract growth.",
     },
     {
       title: "Remote & Regional VET Leadership",
       description:
-        "Specialist expertise in delivering high-impact VET across remote, regional and Indigenous communities. Deep understanding of NT conditions, workforce challenges, and service delivery models that actually work on the ground.",
+        "Specialist expertise in delivering high-impact VET across remote, regional and Indigenous communities. Deep understanding of remote and offshore conditions, workforce challenges, and service delivery models that actually work on the ground.",
     },
     {
       title: "Government Strategy & Funding Alignment",
       description:
-        "Position RTOs to win and retain government funding under the National Skills Agreement, Fee-Free TAFE and jurisdictional priorities, aligning delivery with workforce demand and policy direction.",
+        "Position businesses and RTOs to win and retain government funding under the National Skills Agreement, Fee-Free TAFE and jurisdictional priorities, aligning delivery with workforce demand and policy direction.",
     },
     {
       title: "Executive Advisory & Board Support",
@@ -87,7 +87,7 @@ export default function MikeHamiltonVETConsulting() {
           <h2 className="text-4xl font-semibold">Strengthen Your Performance</h2>
 
           <div className="mt-8 space-y-2 text-slate-300">
-            <p>📞 0400 465 239</p>
+            <p>📞 + 61 400 465 239</p>
             <p>✉️ michaelhamilton9@bigpond.com</p>
           </div>
 
