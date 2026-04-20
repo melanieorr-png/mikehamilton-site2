@@ -30,30 +30,25 @@ export default function App() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
 
-      {/* HEADER */}
-      <header className="border-b border-white/10 bg-slate-950/80">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      {/* TOP LOGO */}
+      <div className="w-full bg-slate-950 py-6 flex justify-center border-b border-white/10">
+        <img
+          src="/logo4.png"
+          alt="Mike Hamilton logo"
+          className="h-16 md:h-20"
+        />
+      </div>
 
-          {/* LEFT: BRAND */}
-          <div className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs text-slate-200">
-            Mike Hamilton | VET Specialist & Advisor
-          </div>
-
-          {/* RIGHT: LOGO */}
-          <a href="/">
-            <img
-              src="/logo4.png"
-              alt="Mike Hamilton logo"
-              className="h-10 md:h-12"
-            />
-          </a>
-
+      {/* BRAND TAG */}
+      <div className="flex justify-center mt-6">
+        <div className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs text-slate-200">
+          Mike Hamilton | VET Specialist & Advisor
         </div>
-      </header>
+      </div>
 
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-white/10">
-        <div className="relative mx-auto max-w-7xl px-6 pb-24 pt-20 lg:px-8">
+        <div className="relative mx-auto max-w-7xl px-6 pb-24 pt-12 lg:px-8">
 
           <div className="max-w-3xl">
             <h1 className="text-5xl font-semibold sm:text-6xl">
@@ -84,7 +79,9 @@ export default function App() {
 
       {/* SERVICES */}
       <section className="mx-auto max-w-7xl px-6 py-16">
-        <h2 className="text-3xl font-semibold">How Mike Can Help</h2>
+        <h2 className="text-3xl font-semibold text-center">
+          How Mike Can Help
+        </h2>
 
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {services.map((service) => (
@@ -101,7 +98,9 @@ export default function App() {
 
       {/* CONTACT */}
       <section className="mx-auto max-w-7xl px-6 py-20 text-center">
-        <h2 className="text-3xl font-semibold">Book a Funding Strategy Call</h2>
+        <h2 className="text-3xl font-semibold">
+          Book a Funding Strategy Call
+        </h2>
 
         <div className="mt-6 text-slate-300">
           <p>📞 +61 400 465 239</p>
