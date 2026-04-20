@@ -63,7 +63,7 @@ export default function App() {
             {/* RIGHT LOGO */}
             <div className="ml-auto">
               <img
-                src="/logo3.PNG"
+                src="/logo4.png"
                 alt="Mike Hamilton logo"
                 className="w-56 md:w-72 lg:w-96"
               />
