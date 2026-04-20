@@ -38,7 +38,7 @@ export default function App() {
             {/* LEFT */}
             <div className="max-w-3xl">
               <h1 className="text-5xl font-semibold sm:text-6xl">
-                VET & Advisory Specialist
+                High-Performance VET Leadership for Training and Workforce Delivery
               </h1>
 
               <p className="mt-4 text-lg italic text-cyan-300">
