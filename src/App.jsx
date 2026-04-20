@@ -29,44 +29,66 @@ export default function MikeHamiltonVETConsulting() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white">
+
+      {/* HERO */}
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.25),transparent_30%),radial-gradient(circle_at_left,rgba(16,185,129,0.18),transparent_25%)]" />
 
         <div className="relative mx-auto max-w-7xl px-6 py-10 lg:px-8">
           <div className="flex items-center justify-between mb-10">
-            <div className="flex items-center gap-3">
-              <span className="text-sm tracking-wide text-slate-300">mikehamilton.com.au</span>
-            </div>
+            <span className="text-sm tracking-wide text-slate-300">
+              mikehamilton.com.au
+            </span>
           </div>
         </div>
 
-        <div className="relative mx-auto grid max-w-7xl gap-12 px-6 pb-24 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
-          <div className="max-w-3xl">
-            <div className="mb-5 inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm text-slate-200">
-              Mike Hamilton | VET Specialist & Advisor
+        {/* MAIN HERO CONTENT */}
+        <div className="relative mx-auto max-w-7xl px-6 pb-24 lg:px-8">
+          
+          <div className="flex items-start w-full gap-10">
+
+            {/* LEFT SIDE (TEXT) */}
+            <div className="max-w-3xl">
+              <div className="mb-5 inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm text-slate-200">
+                Mike Hamilton | VET Specialist & Advisor
+              </div>
+
+              <h1 className="text-5xl font-semibold tracking-tight sm:text-6xl">
+                Experienced VET Leadership for High-Performing Training Needs
+              </h1>
+
+              <p className="mt-4 text-lg italic text-cyan-300">
+                “I’ve mastered one of the hardest environments — and that translates.”
+              </p>
+
+              <p className="mt-6 text-xl text-slate-300">
+                Executive-level VET leadership delivering real outcomes across Australia and the broader Oceania region.
+              </p>
+
+              <div className="mt-10 flex flex-wrap gap-4">
+                <a
+                  href="#services"
+                  className="rounded-2xl border border-white/20 px-6 py-3 text-sm"
+                >
+                  View Services
+                </a>
+              </div>
             </div>
 
-            <h1 className="text-5xl font-semibold tracking-tight sm:text-6xl">
-              Experienced VET Leadership for High-Performing Training Needs
-            </h1>
-
-            <p className="mt-4 text-lg italic text-cyan-300">
-              “I’ve mastered one of the hardest environments — and that translates.”
-            </p>
-
-            <p className="mt-6 text-xl text-slate-300">
-              Executive-level VET leadership delivering real outcomes across Australia and the broader Oceania region.
-            </p>
-
-            <div className="mt-10 flex flex-wrap gap-4">
-              <a href="#services" className="rounded-2xl border border-white/20 px-6 py-3 text-sm">
-                View Services
-              </a>
+            {/* RIGHT SIDE (LOGO) */}
+            <div className="ml-auto shrink-0">
+              <img
+                src="/logo2.png"
+                alt="Mike Hamilton logo"
+                className="w-48 md:w-64 lg:w-80 h-auto drop-shadow-[0_0_25px_rgba(34,211,238,0.5)]"
+              />
             </div>
+
           </div>
         </div>
       </section>
 
+      {/* SERVICES */}
       <section id="services" className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
         <div className="max-w-2xl">
           <h2 className="text-3xl font-semibold">How Mike Can Help</h2>
@@ -74,7 +96,10 @@ export default function MikeHamiltonVETConsulting() {
 
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {services.map((service) => (
-            <div key={service.title} className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-xl">
+            <div
+              key={service.title}
+              className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-xl"
+            >
               <h3 className="text-xl font-semibold">{service.title}</h3>
               <p className="mt-5 text-slate-300">{service.description}</p>
             </div>
@@ -82,6 +107,7 @@ export default function MikeHamiltonVETConsulting() {
         </div>
       </section>
 
+      {/* CONTACT */}
       <section id="contact" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
         <div className="rounded-[2rem] border border-cyan-400/20 bg-gradient-to-br from-cyan-500/10 to-slate-900 p-10 text-center shadow-2xl">
           <h2 className="text-4xl font-semibold">Strengthen Your Performance</h2>
@@ -102,6 +128,7 @@ export default function MikeHamiltonVETConsulting() {
         </div>
       </section>
 
+      {/* FOOTER */}
       <footer className="border-t border-white/10 bg-slate-950/80">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-8 text-sm text-slate-400 lg:flex-row lg:items-center lg:justify-between">
           <p>© {new Date().getFullYear()} Mike Hamilton</p>
