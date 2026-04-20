@@ -78,7 +78,7 @@ export default function MikeHamiltonVETConsulting() {
             {/* RIGHT SIDE (LOGO) */}
             <div className="ml-auto shrink-0">
               <img
-                src="/logo2.png"
+                src="/logo3.PNG"
                 alt="Mike Hamilton logo"
                 className="w-48 md:w-64 lg:w-80 h-auto drop-shadow-[0_0_25px_rgba(34,211,238,0.5)]"
               />
