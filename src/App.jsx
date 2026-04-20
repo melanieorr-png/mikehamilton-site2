@@ -6,7 +6,7 @@ export default function App() {
         "Practical support for small and medium enterprises to build capability, strengthen commercial positioning, and compete with confidence.",
     },
     {
-      title: "General Business and RTO Performance, Compliance & Funding Growth",
+      title: "RTO Performance, Compliance & Funding Growth",
       description:
         "Support RTOs and businesses to strengthen performance, improve commercial outcomes, and enhance financial sustainability.",
     },
@@ -16,9 +16,9 @@ export default function App() {
         "Specialist expertise in delivering high-impact VET across remote, regional and Indigenous communities.",
     },
     {
-      title: "National VET Reform & VET Funding Strategy",
+      title: "National Skills Agreement & VET Funding Strategy",
       description:
-        "Position organisations to win and retain government funding under the National Skills Agreement.",
+        "Position organisations to win and retain government funding under the National Skills Agreement and Fee-Free TAFE.",
     },
     {
       title: "Executive Advisory & Board Support",
@@ -30,46 +30,55 @@ export default function App() {
   return (
     <div className="min-h-screen bg-slate-950 text-white">
 
+      {/* HEADER */}
+      <header className="border-b border-white/10 bg-slate-950/80">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+
+          {/* LEFT: BRAND */}
+          <div className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs text-slate-200">
+            Mike Hamilton | VET Specialist & Advisor
+          </div>
+
+          {/* RIGHT: LOGO */}
+          <a href="/">
+            <img
+              src="/logo3.PNG"
+              alt="Mike Hamilton logo"
+              className="h-10 md:h-12"
+            />
+          </a>
+
+        </div>
+      </header>
+
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-white/10">
-        <div className="relative mx-auto max-w-7xl px-6 pb-24 lg:px-8">
-          <div className="flex items-center w-full gap-10">
+        <div className="relative mx-auto max-w-7xl px-6 pb-24 pt-20 lg:px-8">
 
-            {/* LEFT */}
-            <div className="max-w-3xl">
-              <h1 className="text-5xl font-semibold sm:text-6xl">
-                High-Performance VET Leadership for Training and Workforce Delivery
-              </h1>
+          <div className="max-w-3xl">
+            <h1 className="text-5xl font-semibold sm:text-6xl">
+              High-Performance VET Leadership for Training and Workforce Delivery
+            </h1>
 
-              <p className="mt-4 text-lg italic text-cyan-300">
-                “I’ve delivered results in some of the most challenging environments — and that translates beyond the NT.”
-              </p>
+            <p className="mt-4 text-lg italic text-cyan-300">
+              “I’ve delivered results in some of the most challenging environments — and that translates beyond the NT.”
+            </p>
 
-              <p className="mt-6 text-xl text-slate-300">
-                Helping organisations secure funding, align with government priorities,
-                and deliver high-impact training across Australia.
-              </p>
+            <p className="mt-6 text-xl text-slate-300">
+              Helping organisations secure funding, align with government priorities,
+              and deliver high-impact training across Australia.
+            </p>
 
-              <div className="mt-10 flex gap-4">
-                <a
-                  href="/national-skills-agreement.html"
-                  className="rounded-2xl bg-white px-6 py-3 text-sm text-slate-950"
-                >
-                  National Skills Agreement Guide
-                </a>
-              </div>
+            <div className="mt-10 flex gap-4">
+              <a
+                href="/national-skills-agreement.html"
+                className="rounded-2xl bg-white px-6 py-3 text-sm text-slate-950"
+              >
+                National Skills Agreement Guide
+              </a>
             </div>
-
-            {/* RIGHT LOGO */}
-            <div className="ml-auto">
-              <img
-                src="/logo4.png"
-                alt="Mike Hamilton logo"
-                className="w-56 md:w-72 lg:w-96"
-              />
-            </div>
-
           </div>
+
         </div>
       </section>
 
