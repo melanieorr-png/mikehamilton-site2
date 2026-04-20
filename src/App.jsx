@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import NationalSkillsAgreement from "./NationalSkillsAgreement";
 
 function Home() {
@@ -32,12 +32,10 @@ function Home() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white">
-
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="relative mx-auto max-w-7xl px-6 pb-24 lg:px-8">
           <div className="flex items-center w-full gap-10">
-
             {/* LEFT */}
             <div className="max-w-3xl">
               <h1 className="text-5xl font-semibold sm:text-6xl">
@@ -71,7 +69,6 @@ function Home() {
                 className="w-56 md:w-72 lg:w-96"
               />
             </div>
-
           </div>
         </div>
       </section>
