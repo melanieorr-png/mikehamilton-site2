@@ -1,19 +1,30 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- ✅ Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NXH2B0QSJ0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-NXH2B0QSJ0');
+    </script>
+
+    <!-- ✅ Your existing setup -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Mike Hamilton | VET Specialist</title>
 
-    <!-- Google Search Console Verification -->
-    <meta name="google-site-verification" content="googlef6ebffa00bac6331" />
-
+    <!-- Tailwind (used by your React app) -->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body>
+    <!-- React mounts here -->
     <div id="root"></div>
-    <script type="module" src="/main.jsx"></script>
+
+    <!-- Your app entry point -->
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
