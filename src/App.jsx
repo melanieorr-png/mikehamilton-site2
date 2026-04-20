@@ -1,29 +1,32 @@
-export default function MikeHamiltonVETConsulting() {
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import NationalSkillsAgreement from "./NationalSkillsAgreement";
+
+function Home() {
   const services = [
     {
-      title: "Small Business & Tender/Grant Advisory",
+      title: "Tender Writing, Grants & Government Funding Support",
       description:
-        "Practical support for small and medium enterprises to build capability, strengthen commercial positioning, and compete with confidence. Includes guidance on tender responses, grant applications, and negotiation strategies to improve success rates.",
+        "Practical support for small and medium enterprises to build capability, strengthen commercial positioning, and compete with confidence.",
     },
     {
-      title: "Business or RTO Performance & Commercial Advisory",
+      title: "RTO Performance, Compliance & Funding Growth",
       description:
-        "Support business and RTOs to strengthen performance, improve commercial outcomes, and enhance financial sustainability, including revenue diversification and contract growth.",
+        "Support RTOs and businesses to strengthen performance, improve commercial outcomes, and enhance financial sustainability.",
     },
     {
       title: "Remote & Regional VET Leadership",
       description:
-        "Specialist expertise in delivering high-impact VET across remote, regional and Indigenous communities. Deep understanding of remote and offshore conditions, workforce challenges, and service delivery models that actually work on the ground.",
+        "Specialist expertise in delivering high-impact VET across remote, regional and Indigenous communities.",
     },
     {
-      title: "Government Strategy & Funding Alignment",
+      title: "National Skills Agreement & VET Funding Strategy",
       description:
-        "Position businesses and RTOs to win and retain government funding under the National Skills Agreement, Fee-Free TAFE and jurisdictional priorities, aligning delivery with workforce demand and policy direction.",
+        "Position organisations to win and retain government funding under the National Skills Agreement and Fee-Free TAFE.",
     },
     {
       title: "Executive Advisory & Board Support",
       description:
-        "Trusted advisor to CEOs, Boards and Executives on governance, performance, reform, and large-scale education delivery in complex environments.",
+        "Trusted advisor to CEOs, Boards and Executives on governance, performance, and reform.",
     },
   ];
 
@@ -32,29 +35,13 @@ export default function MikeHamiltonVETConsulting() {
 
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-white/10">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(59,130,246,0.25),transparent_30%),radial-gradient(circle_at_left,rgba(16,185,129,0.18),transparent_25%)]" />
-
-        <div className="relative mx-auto max-w-7xl px-6 py-10 lg:px-8">
-          <div className="flex items-center justify-between mb-10">
-            <span className="text-sm tracking-wide text-slate-300">
-              mikehamilton.com.au
-            </span>
-          </div>
-        </div>
-
-        {/* MAIN HERO CONTENT */}
         <div className="relative mx-auto max-w-7xl px-6 pb-24 lg:px-8">
-          
-          <div className="flex items-start w-full gap-10">
+          <div className="flex items-center w-full gap-10">
 
-            {/* LEFT SIDE (TEXT) */}
+            {/* LEFT */}
             <div className="max-w-3xl">
-              <div className="mb-5 inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm text-slate-200">
-                Mike Hamilton | VET Specialist & Advisor
-              </div>
-
-              <h1 className="text-5xl font-semibold tracking-tight sm:text-6xl">
-                Experienced VET Leadership for High-Performing Training Needs
+              <h1 className="text-5xl font-semibold sm:text-6xl">
+                National Skills Agreement, VET Funding & RTO Advisory Specialist
               </h1>
 
               <p className="mt-4 text-lg italic text-cyan-300">
@@ -62,25 +49,26 @@ export default function MikeHamiltonVETConsulting() {
               </p>
 
               <p className="mt-6 text-xl text-slate-300">
-                Executive-level VET leadership delivering real outcomes across Australia and the broader Oceania region.
+                Helping organisations secure funding, align with government priorities,
+                and deliver high-impact training across Australia.
               </p>
 
-              <div className="mt-10 flex flex-wrap gap-4">
-                <a
-                  href="#services"
-                  className="rounded-2xl border border-white/20 px-6 py-3 text-sm"
+              <div className="mt-10 flex gap-4">
+                <Link
+                  to="/national-skills-agreement"
+                  className="rounded-2xl bg-white px-6 py-3 text-sm text-slate-950"
                 >
-                  View Services
-                </a>
+                  National Skills Agreement Guide
+                </Link>
               </div>
             </div>
 
-            {/* RIGHT SIDE (LOGO) */}
-            <div className="ml-auto shrink-0">
+            {/* RIGHT LOGO */}
+            <div className="ml-auto">
               <img
                 src="/logo3.PNG"
                 alt="Mike Hamilton logo"
-                className="w-48 md:w-64 lg:w-80 h-auto drop-shadow-[0_0_25px_rgba(34,211,238,0.5)]"
+                className="w-56 md:w-72 lg:w-96"
               />
             </div>
 
@@ -89,52 +77,45 @@ export default function MikeHamiltonVETConsulting() {
       </section>
 
       {/* SERVICES */}
-      <section id="services" className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-        <div className="max-w-2xl">
-          <h2 className="text-3xl font-semibold">How Mike Can Help</h2>
-        </div>
+      <section className="mx-auto max-w-7xl px-6 py-16">
+        <h2 className="text-3xl font-semibold">How Mike Can Help</h2>
 
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {services.map((service) => (
             <div
               key={service.title}
-              className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-xl"
+              className="rounded-2xl border border-white/10 p-8"
             >
               <h3 className="text-xl font-semibold">{service.title}</h3>
-              <p className="mt-5 text-slate-300">{service.description}</p>
+              <p className="mt-4 text-slate-300">{service.description}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* CONTACT */}
-      <section id="contact" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-        <div className="rounded-[2rem] border border-cyan-400/20 bg-gradient-to-br from-cyan-500/10 to-slate-900 p-10 text-center shadow-2xl">
-          <h2 className="text-4xl font-semibold">Strengthen Your Performance</h2>
+      <section className="mx-auto max-w-7xl px-6 py-20 text-center">
+        <h2 className="text-3xl font-semibold">Book a Funding Strategy Call</h2>
 
-          <div className="mt-8 space-y-2 text-slate-300">
-            <p>📞 + 61 400 465 239</p>
-            <p>✉️ michaelhamilton9@bigpond.com</p>
-          </div>
-
-          <div className="mt-8">
-            <a
-              href="mailto:michaelhamilton9@bigpond.com"
-              className="inline-flex items-center gap-2 rounded-2xl bg-white px-8 py-4 text-sm font-semibold text-slate-950"
-            >
-              Book a Consultation
-            </a>
-          </div>
+        <div className="mt-6 text-slate-300">
+          <p>📞 +61 400 465 239</p>
+          <p>✉️ michaelhamilton9@bigpond.com</p>
         </div>
       </section>
-
-      {/* FOOTER */}
-      <footer className="border-t border-white/10 bg-slate-950/80">
-        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-8 text-sm text-slate-400 lg:flex-row lg:items-center lg:justify-between">
-          <p>© {new Date().getFullYear()} Mike Hamilton</p>
-          <p>ABN 67 680 975 723</p>
-        </div>
-      </footer>
     </div>
+  );
+}
+
+export default function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route
+          path="/national-skills-agreement"
+          element={<NationalSkillsAgreement />}
+        />
+      </Routes>
+    </Router>
   );
 }
