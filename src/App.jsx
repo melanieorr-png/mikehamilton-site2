@@ -58,7 +58,7 @@ export default function MikeHamiltonVETConsulting() {
               </h1>
 
               <p className="mt-4 text-lg italic text-cyan-300">
-                “I’ve mastered one of the hardest environments — and that translates.”
+                “I’ve delivered results in some of the most challenging environments — and that translates beyond the NT.”
               </p>
 
               <p className="mt-6 text-xl text-slate-300">
