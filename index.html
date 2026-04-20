@@ -1,30 +1,34 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- ✅ Google Analytics -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NXH2B0QSJ0"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-NXH2B0QSJ0');
     </script>
 
-    <!-- ✅ Your existing setup -->
+    <!-- Your existing setup -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mike Hamilton | VET Specialist</title>
 
-    <!-- Tailwind (used by your React app) -->
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body>
+    <!-- 🔹 Logo Header -->
+    <header style="display: flex; align-items: center; justify-content: center; padding: 20px;">
+      <img src="/logo2.png" alt="Logo" style="height: 80px;">
+    </header>
+
     <!-- React mounts here -->
     <div id="root"></div>
 
-    <!-- Your app entry point -->
+    <!-- App entry -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
