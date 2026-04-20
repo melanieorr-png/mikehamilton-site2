@@ -2,40 +2,14 @@ import { HashRouter as Router, Routes, Route, Link } from "react-router-dom";
 import NationalSkillsAgreement from "./NationalSkillsAgreement";
 
 function Home() {
-  const services = [
-    {
-      title: "Tender Writing, Grants & Government Funding Support",
-      description:
-        "Practical support for small and medium enterprises to build capability, strengthen commercial positioning, and compete with confidence.",
-    },
-    {
-      title: "RTO Performance, Compliance & Funding Growth",
-      description:
-        "Support RTOs and businesses to strengthen performance, improve commercial outcomes, and enhance financial sustainability.",
-    },
-    {
-      title: "Remote & Regional VET Leadership",
-      description:
-        "Specialist expertise in delivering high-impact VET across remote, regional and Indigenous communities.",
-    },
-    {
-      title: "National Skills Agreement & VET Funding Strategy",
-      description:
-        "Position organisations to win and retain government funding under the National Skills Agreement and Fee-Free TAFE.",
-    },
-    {
-      title: "Executive Advisory & Board Support",
-      description:
-        "Trusted advisor to CEOs, Boards and Executives on governance, performance, and reform.",
-    },
-  ];
-
   return (
     <div className="min-h-screen bg-slate-950 text-white">
+
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="relative mx-auto max-w-7xl px-6 pb-24 lg:px-8">
           <div className="flex items-center w-full gap-10">
+
             {/* LEFT */}
             <div className="max-w-3xl">
               <h1 className="text-5xl font-semibold sm:text-6xl">
@@ -69,24 +43,8 @@ function Home() {
                 className="w-56 md:w-72 lg:w-96"
               />
             </div>
+
           </div>
-        </div>
-      </section>
-
-      {/* SERVICES */}
-      <section className="mx-auto max-w-7xl px-6 py-16">
-        <h2 className="text-3xl font-semibold">How Mike Can Help</h2>
-
-        <div className="mt-10 grid gap-6 md:grid-cols-2">
-          {services.map((service) => (
-            <div
-              key={service.title}
-              className="rounded-2xl border border-white/10 p-8"
-            >
-              <h3 className="text-xl font-semibold">{service.title}</h3>
-              <p className="mt-4 text-slate-300">{service.description}</p>
-            </div>
-          ))}
         </div>
       </section>
 
@@ -99,6 +57,7 @@ function Home() {
           <p>✉️ michaelhamilton9@bigpond.com</p>
         </div>
       </section>
+
     </div>
   );
 }
