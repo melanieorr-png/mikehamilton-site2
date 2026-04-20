@@ -6,7 +6,7 @@ export default function App() {
         "Practical support for small and medium enterprises to build capability, strengthen commercial positioning, and compete with confidence.",
     },
     {
-      title: "RTO Performance, Compliance & Funding Growth",
+      title: "General Business and RTO Performance, Compliance & Funding Growth",
       description:
         "Support RTOs and businesses to strengthen performance, improve commercial outcomes, and enhance financial sustainability.",
     },
@@ -16,9 +16,9 @@ export default function App() {
         "Specialist expertise in delivering high-impact VET across remote, regional and Indigenous communities.",
     },
     {
-      title: "National Skills Agreement & VET Funding Strategy",
+      title: "National VET Reform & VET Funding Strategy",
       description:
-        "Position organisations to win and retain government funding under the National Skills Agreement and Fee-Free TAFE.",
+        "Position organisations to win and retain government funding under the National Skills Agreement.",
     },
     {
       title: "Executive Advisory & Board Support",
@@ -38,7 +38,7 @@ export default function App() {
             {/* LEFT */}
             <div className="max-w-3xl">
               <h1 className="text-5xl font-semibold sm:text-6xl">
-                National Skills Agreement, VET Funding & RTO Advisory Specialist
+                VET & Advisory Specialist
               </h1>
 
               <p className="mt-4 text-lg italic text-cyan-300">
