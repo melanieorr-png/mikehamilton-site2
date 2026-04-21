@@ -3,22 +3,22 @@ export default function App() {
     {
       title: "Tender Writing, Grants & Government Funding Support",
       description:
-        "Practical support for small and medium enterprises to build capability, strengthen commercial positioning, and compete with confidence.",
+        "Practical support for enterprises to build capability, strengthen commercial positioning, and compete with confidence.",
     },
     {
-      title: "RTO Performance, Compliance & Funding Growth",
+      title: "Oragnisational Performance, Quality Assurance & Revenue Growth",
       description:
         "Support RTOs and businesses to strengthen performance, improve commercial outcomes, and enhance financial sustainability.",
     },
     {
       title: "Remote & Regional VET Leadership",
       description:
-        "25years+ in delivering high-impact VET across remote, regional and Indigenous communities.",
+        "25 years in delivering high-impact VET across remote, regional and Indigenous communities.",
     },
     {
-      title: "National Skills Agreement & VET Funding Strategy",
+      title: "National Skills Agreement & Other Funding Opportunities",
       description:
-        "Position organisations to win and retain government funding under the National Skills Agreement and Fee-Free TAFE.",
+        "Position organisations to win and retain government funding under the National Skills Agreement and other funding models.",
     },
     {
       title: "Executive Advisory & Board Support",
