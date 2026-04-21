@@ -80,7 +80,7 @@ export default function App() {
       {/* SERVICES */}
       <section className="mx-auto max-w-7xl px-6 py-16">
         <h2 className="text-3xl font-semibold text-center">
-          How Mike Can Help
+          Specialisations
         </h2>
 
         <div className="mt-10 grid gap-6 md:grid-cols-2">
@@ -99,7 +99,7 @@ export default function App() {
       {/* CONTACT */}
       <section className="mx-auto max-w-7xl px-6 py-20 text-center">
         <h2 className="text-3xl font-semibold">
-          Book a Funding Strategy Call
+          Contact Mike Hamilton
         </h2>
 
         <div className="mt-6 text-slate-300">
