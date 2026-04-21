@@ -13,7 +13,7 @@ export default function App() {
     {
       title: "Remote & Regional VET Leadership",
       description:
-        "Specialist expertise in delivering high-impact VET across remote, regional and Indigenous communities.",
+        "25years+ in delivering high-impact VET across remote, regional and Indigenous communities.",
     },
     {
       title: "National Skills Agreement & VET Funding Strategy",
@@ -23,7 +23,7 @@ export default function App() {
     {
       title: "Executive Advisory & Board Support",
       description:
-        "Trusted advisor to CEOs, Boards and Executives on governance, performance, and reform.",
+        "Trusted advisor to CEOs, Boards and Executives on governance, performance, change management and reform.",
     },
   ];
 
@@ -52,15 +52,15 @@ export default function App() {
 
           <div className="max-w-3xl">
             <h1 className="text-5xl font-semibold sm:text-6xl">
-              High-Performance VET Leadership for Training and Workforce Delivery
+              High-Performance VET Leadership, Governance, Corporate Strategy and Workforce Management
             </h1>
 
             <p className="mt-4 text-lg italic text-cyan-300">
-              “I’ve delivered results in some of the most challenging environments — and that translates beyond the NT.”
+              “I’ve delivered results in some of the most challenging and complex environments accross Australia and beyond.”
             </p>
 
             <p className="mt-6 text-xl text-slate-300">
-              Helping organisations secure funding, align with government priorities,
+              Helping organisations align with government priorities,
               and deliver high-impact training across Australia.
             </p>
 
