@@ -8,7 +8,7 @@ export default function App() {
     },
     {
       title: "Organisational Performance, Quality Assurance & Sustainable Growth",
-      path: "/organistional-performance.html",
+      path: "/organisational-performance.html",
       description:
         "Support RTOs and businesses to strengthen performance, improve organisational outcomes, and enhance long-term sustainability.",
     },
