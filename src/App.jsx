@@ -50,7 +50,7 @@ export default function App() {
             Mike Hamilton | VET Specialist & Advisor
           </div>
           <a
-            href="https://www.linkedin.com/in/mikehamilton"
+            href="https://www.linkedin.com/in/michael-hamilton-bb8794b0/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-xs text-cyan-300 hover:underline"
@@ -163,7 +163,7 @@ export default function App() {
           <p>
             🔗{" "}
             <a
-              href="https://www.linkedin.com/in/mikehamilton"
+              href="https://www.linkedin.com/in/michael-hamilton-bb8794b0/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-cyan-300 hover:underline"
