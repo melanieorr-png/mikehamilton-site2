@@ -50,11 +50,11 @@ export default function App() {
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="relative mx-auto max-w-7xl px-6 pb-24 pt-12 lg:px-8">
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-6 items-start">
 
             {/* LEFT SIDE */}
-            <div className="max-w-3xl">
-              <h1 className="text-5xl font-semibold sm:text-6xl">
+            <div className="max-w-2xl">
+              <h1 className="text-5xl font-semibold sm:text-6xl leading-tight">
                 High-Performance VET Leadership, Governance, Corporate Strategy and Workforce Management
               </h1>
 
@@ -76,18 +76,18 @@ export default function App() {
               </div>
             </div>
 
-            {/* RIGHT SIDE - PROFILE IMAGE */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="relative">
-                
-                {/* Glow effect */}
+            {/* RIGHT SIDE - PROFILE */}
+            <div className="flex justify-center lg:justify-start lg:-ml-6">
+              <div className="relative mt-2">
+
+                {/* Glow */}
                 <div className="absolute inset-0 rounded-full bg-cyan-500/20 blur-2xl"></div>
 
-                {/* Profile image */}
+                {/* Image */}
                 <img
                   src="/mhprofile.JPG"
                   alt="Mike Hamilton"
-                  className="relative w-72 h-72 object-cover rounded-full border-4 border-white/10 shadow-2xl"
+                  className="relative w-64 h-64 md:w-72 md:h-72 object-cover rounded-full border-4 border-white/10 shadow-2xl"
                 />
 
               </div>
