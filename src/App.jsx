@@ -2,31 +2,37 @@ export default function App() {
   const services = [
     {
       title: "Tender Writing, Grants & Government Funding Support",
+      path: "/tender-writing.html",
       description:
         "Strategic support to build capability, navigate tenders and funding processes, and achieve outcomes in complex operating environments.",
     },
     {
       title: "Organisational Performance, Quality Assurance & Sustainable Growth",
+      path: "/organisational-performance.html",
       description:
         "Support RTOs and businesses to strengthen performance, improve organisational outcomes, and enhance long-term sustainability.",
     },
     {
       title: "Regional & Remote VET Leadership",
+      path: "/regional-remote.html",
       description:
         "Over 25 years delivering high-impact VET across regional, remote and Indigenous communities.",
     },
     {
       title: "National Skills Agreement & Funding Reform",
+      path: "/national-skills-agreement.html",
       description:
         "Support organisations to understand government priorities, align with reform settings, and respond to opportunities under the National Skills Agreement and other funding models.",
     },
     {
       title: "Executive Advisory & Board Support",
+      path: "/executive-advisory.html",
       description:
         "Trusted advisor to CEOs, Boards and Executives on governance, performance, change management and reform.",
     },
     {
       title: "Sector Positioning & Market Benchmarking",
+      path: "/sector-positioning.html",
       description:
         "Analyse market conditions and position organisations in niche and priority areas. Leverage NCVER data and other sources to inform strategy, strengthen market positioning, and support sustainable growth.",
     },
@@ -64,7 +70,6 @@ export default function App() {
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="relative mx-auto max-w-7xl px-6 pb-24 pt-12 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-8 items-start">
-            {/* LEFT */}
             <div className="max-w-2xl">
               <h1 className="text-5xl font-semibold sm:text-6xl leading-tight">
                 High-Performance VET Leadership, Governance, Corporate Strategy
@@ -97,7 +102,7 @@ export default function App() {
               </div>
             </div>
 
-            {/* RIGHT IMAGE + GRAPH */}
+            {/* RIGHT IMAGE */}
             <div className="flex justify-center lg:justify-start lg:-ml-6">
               <div className="relative mt-2 w-full max-w-md">
                 <div className="absolute top-6 left-1/2 -translate-x-1/2 w-72 h-72 rounded-full bg-cyan-500/20 blur-3xl"></div>
@@ -109,27 +114,6 @@ export default function App() {
                     className="w-64 h-64 md:w-72 md:h-72 object-cover rounded-full border-4 border-white/10 shadow-2xl"
                   />
                 </div>
-
-                <div className="relative -mt-6 z-0">
-                  <svg viewBox="0 0 500 180" className="w-full h-auto" fill="none">
-                    <path
-                      d="M20 145 C90 140,120 130,170 120 C220 110,245 115,290 90 C340 62,385 78,470 20"
-                      stroke="rgba(34,211,238,0.18)"
-                      strokeWidth="18"
-                      strokeLinecap="round"
-                    />
-                    <path
-                      d="M20 145 C90 140,120 130,170 120 C220 110,245 115,290 90 C340 62,385 78,470 20"
-                      stroke="rgb(34,211,238)"
-                      strokeWidth="4"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                </div>
-
-                <p className="text-center text-sm text-slate-400 mt-2">
-                  Strategy. Performance. Growth.
-                </p>
               </div>
             </div>
           </div>
@@ -146,7 +130,14 @@ export default function App() {
               key={service.title}
               className="rounded-2xl border border-white/10 p-8 bg-slate-900/50"
             >
-              <h3 className="text-xl font-semibold">{service.title}</h3>
+              {/* 👇 THIS IS THE ONLY REAL CHANGE */}
+              <a
+                href={service.path}
+                className="text-xl font-semibold hover:text-cyan-300 transition"
+              >
+                {service.title}
+              </a>
+
               <p className="mt-4 text-slate-300">{service.description}</p>
             </div>
           ))}
