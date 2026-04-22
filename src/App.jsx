@@ -1,9 +1,9 @@
 export default function App() {
   const services = [
     {
-      title: "Grants & Funding Support",
+      title: "Tender Writing, Grants & Government Funding Support",
       description:
-        "Practical support to build capability, navigate government funding processes, and deliver outcomes in complex operating environments.",
+        "Strategic support to build capability, navigate tenders and funding processes, and achieve outcomes in complex operating environments.",
     },
     {
       title: "Organisational Performance, Quality Assurance & Sustainable Growth",
@@ -11,9 +11,9 @@ export default function App() {
         "Support RTOs and businesses to strengthen performance, improve organisational outcomes, and enhance long-term sustainability.",
     },
     {
-      title: "Remote & Regional VET Leadership",
+      title: "Regional & Remote VET Leadership",
       description:
-        "Over 25 years delivering high-impact VET across remote, regional and Indigenous communities.",
+        "Over 25 years delivering high-impact VET across regional, remote and Indigenous communities.",
     },
     {
       title: "National Skills Agreement & Funding Reform",
