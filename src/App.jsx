@@ -18,7 +18,7 @@ export default function App() {
     {
       title: "National Skills Agreement & Other Funding Opportunities",
       description:
-        "Position organisations to win and retain government funding under the National Skills Agreement and other funding models.",
+        "Position organisations to understand government funding under the National Skills Agreement and other funding models.",
     },
     {
       title: "Executive Advisory & Board Support",
