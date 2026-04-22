@@ -32,7 +32,7 @@ export default function App() {
       {/* TOP LOGO */}
       <div className="w-full bg-slate-950 py-6 flex justify-center border-b border-white/10">
         <img
-          src="/logo4.png"
+          src="/logo3.PNG"
           alt="Mike Hamilton logo"
           className="h-28 md:h-40"
         />
