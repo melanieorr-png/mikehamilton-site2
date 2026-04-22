@@ -34,7 +34,6 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white">
-
       {/* TOP LOGO */}
       <div className="w-full bg-slate-950 py-6 flex justify-center border-b border-white/10">
         <img
@@ -54,61 +53,127 @@ export default function App() {
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="relative mx-auto max-w-7xl px-6 pb-24 pt-12 lg:px-8">
-
-          <div className="grid lg:grid-cols-2 gap-6 items-start">
-
+          <div className="grid lg:grid-cols-2 gap-8 items-start">
             {/* LEFT */}
             <div className="max-w-2xl">
               <h1 className="text-5xl font-semibold sm:text-6xl leading-tight">
-                High-Performance VET Leadership, Governance, Corporate Strategy and Workforce Management
+                High-Performance VET Leadership, Governance, Corporate Strategy
+                and Workforce Management
               </h1>
 
               <p className="mt-4 text-lg italic text-cyan-300">
-                “I’ve delivered results in some of the most challenging and complex environments across Australia and beyond.”
+                “I’ve delivered results in some of the most challenging and
+                complex environments across Australia and beyond.”
               </p>
 
               <p className="mt-6 text-xl text-slate-300">
-                Helping organisations align with government priorities and deliver high-impact training across Australia.
+                Helping organisations align with government priorities and
+                deliver high-impact training across Australia.
               </p>
 
-              <div className="mt-10 flex gap-4">
+              <div className="mt-10 flex gap-4 flex-wrap">
                 <a
                   href="/national-skills-agreement.html"
-                  className="rounded-2xl bg-white px-6 py-3 text-sm text-slate-950"
+                  className="rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-slate-950 hover:bg-cyan-300 transition"
                 >
                   National Skills Agreement Guide
+                </a>
+                <a
+                  href="mailto:michaelhamilton9@bigpond.com"
+                  className="rounded-2xl border border-white/20 px-6 py-3 text-sm font-semibold text-white hover:border-cyan-300 hover:text-cyan-300 transition"
+                >
+                  Book a Consultation
                 </a>
               </div>
             </div>
 
-            {/* RIGHT IMAGE */}
+            {/* RIGHT IMAGE + GROWTH GRAPH */}
             <div className="flex justify-center lg:justify-start lg:-ml-6">
-              <div className="relative mt-2">
-                <div className="absolute inset-0 rounded-full bg-cyan-500/20 blur-2xl"></div>
+              <div className="relative mt-2 w-full max-w-md">
+                {/* glow behind profile */}
+                <div className="absolute top-6 left-1/2 -translate-x-1/2 w-72 h-72 rounded-full bg-cyan-500/20 blur-3xl"></div>
 
-                <img
-                  src="/mhprofile.JPG"
-                  alt="Mike Hamilton"
-                  className="relative w-64 h-64 md:w-72 md:h-72 object-cover rounded-full border-4 border-white/10 shadow-2xl"
-                />
+                {/* profile */}
+                <div className="relative flex justify-center z-10">
+                  <img
+                    src="/mhprofile.JPG"
+                    alt="Mike Hamilton"
+                    className="relative w-64 h-64 md:w-72 md:h-72 object-cover rounded-full border-4 border-white/10 shadow-2xl"
+                  />
+                </div>
+
+                {/* growth graph under profile */}
+                <div className="relative -mt-6 z-0">
+                  <svg
+                    viewBox="0 0 500 180"
+                    className="w-full h-auto"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    {/* soft glow line */}
+                    <path
+                      d="M20 145 C90 140, 120 130, 170 120 C220 110, 245 115, 290 90 C340 62, 385 78, 470 20"
+                      stroke="rgba(34,211,238,0.18)"
+                      strokeWidth="18"
+                      strokeLinecap="round"
+                    />
+
+                    {/* main line */}
+                    <path
+                      d="M20 145 C90 140, 120 130, 170 120 C220 110, 245 115, 290 90 C340 62, 385 78, 470 20"
+                      stroke="rgb(34,211,238)"
+                      strokeWidth="4"
+                      strokeLinecap="round"
+                    />
+
+                    {/* arrow head */}
+                    <path
+                      d="M452 18 L470 20 L460 36"
+                      stroke="rgb(34,211,238)"
+                      strokeWidth="4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+
+                    {/* data points */}
+                    <circle cx="110" cy="134" r="4" fill="rgb(34,211,238)" />
+                    <circle cx="205" cy="114" r="4" fill="rgb(34,211,238)" />
+                    <circle cx="300" cy="86" r="4" fill="rgb(34,211,238)" />
+                    <circle cx="390" cy="66" r="4" fill="rgb(34,211,238)" />
+
+                    {/* subtle baseline */}
+                    <line
+                      x1="20"
+                      y1="160"
+                      x2="480"
+                      y2="160"
+                      stroke="rgba(255,255,255,0.08)"
+                      strokeWidth="1"
+                    />
+                  </svg>
+                </div>
+
+                {/* caption */}
+                <div className="mt-2 text-center">
+                  <p className="text-sm text-slate-400">
+                    Strategy. Performance. Growth.
+                  </p>
+                </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
 
       {/* SERVICES */}
       <section className="mx-auto max-w-7xl px-6 py-16">
-        <h2 className="text-3xl font-semibold text-center">
-          Specialisations
-        </h2>
+        <h2 className="text-3xl font-semibold text-center">Specialisations</h2>
 
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {services.map((service) => (
             <div
               key={service.title}
-              className="rounded-2xl border border-white/10 p-8"
+              className="rounded-2xl border border-white/10 p-8 bg-slate-900/50"
             >
               <h3 className="text-xl font-semibold">{service.title}</h3>
               <p className="mt-4 text-slate-300">{service.description}</p>
@@ -119,9 +184,7 @@ export default function App() {
 
       {/* CONTACT */}
       <section className="mx-auto max-w-7xl px-6 py-20 text-center">
-        <h2 className="text-3xl font-semibold">
-          Contact Mike Hamilton
-        </h2>
+        <h2 className="text-3xl font-semibold">Contact Mike Hamilton</h2>
 
         <div className="mt-6 text-slate-300">
           <p>📞 +61 400 465 239</p>
@@ -131,7 +194,7 @@ export default function App() {
         <div className="mt-8">
           <a
             href="mailto:michaelhamilton9@bigpond.com"
-            className="inline-flex items-center gap-2 rounded-2xl bg-white px-8 py-4 text-sm font-semibold text-slate-950"
+            className="inline-flex items-center gap-2 rounded-2xl bg-white px-8 py-4 text-sm font-semibold text-slate-950 hover:bg-cyan-300 transition"
           >
             Book a Consultation
           </a>
@@ -145,7 +208,6 @@ export default function App() {
           <p>ABN 67 680 975 723</p>
         </div>
       </footer>
-
     </div>
   );
 }
