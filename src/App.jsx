@@ -6,7 +6,7 @@ export default function App() {
         "Practical support for enterprises to build capability, strengthen commercial positioning, and compete with confidence.",
     },
     {
-      title: "Oragnisational Performance, Quality Assurance & Revenue Growth",
+      title: "Organisational Performance, Quality Assurance & Revenue Growth",
       description:
         "Support RTOs and businesses to strengthen performance, improve commercial outcomes, and enhance financial sustainability.",
     },
@@ -29,7 +29,6 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-white">
-
       {/* TOP LOGO */}
       <div className="w-full bg-slate-950 py-6 flex justify-center border-b border-white/10">
         <img
@@ -49,19 +48,17 @@ export default function App() {
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="relative mx-auto max-w-7xl px-6 pb-24 pt-12 lg:px-8">
-
           <div className="max-w-3xl">
             <h1 className="text-5xl font-semibold sm:text-6xl">
               High-Performance VET Leadership, Governance, Corporate Strategy and Workforce Management
             </h1>
 
             <p className="mt-4 text-lg italic text-cyan-300">
-              “I’ve delivered results in some of the most challenging and complex environments accross Australia and beyond.”
+              “I’ve delivered results in some of the most challenging and complex environments across Australia and beyond.”
             </p>
 
             <p className="mt-6 text-xl text-slate-300">
-              Helping organisations align with government priorities,
-              and deliver high-impact training across Australia.
+              Helping organisations align with government priorities and deliver high-impact training across Australia.
             </p>
 
             <div className="mt-10 flex gap-4">
@@ -73,15 +70,12 @@ export default function App() {
               </a>
             </div>
           </div>
-
         </div>
       </section>
 
       {/* SERVICES */}
       <section className="mx-auto max-w-7xl px-6 py-16">
-        <h2 className="text-3xl font-semibold text-center">
-          Specialisations
-        </h2>
+        <h2 className="text-3xl font-semibold text-center">Specialisations</h2>
 
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {services.map((service) => (
@@ -98,9 +92,7 @@ export default function App() {
 
       {/* CONTACT */}
       <section className="mx-auto max-w-7xl px-6 py-20 text-center">
-        <h2 className="text-3xl font-semibold">
-          Contact Mike Hamilton
-        </h2>
+        <h2 className="text-3xl font-semibold">Contact Mike Hamilton</h2>
 
         <div className="mt-6 text-slate-300">
           <p>📞 +61 400 465 239</p>
@@ -124,7 +116,6 @@ export default function App() {
           <p>ABN 67 680 975 723</p>
         </div>
       </footer>
-
     </div>
   );
 }
