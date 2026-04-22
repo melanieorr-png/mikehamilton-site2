@@ -45,8 +45,19 @@ export default function App() {
 
       {/* BRAND TAG */}
       <div className="flex justify-center mt-6">
-        <div className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs text-slate-200">
-          Mike Hamilton | VET Specialist & Advisor
+        <div className="flex items-center gap-3">
+  <div className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs text-slate-200">
+    Mike Hamilton | VET Specialist & Advisor
+  </div>
+  <a
+    href="https://www.linkedin.com/in/mikehamilton"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-xs text-cyan-300 hover:underline"
+  >
+    LinkedIn
+  </a>
+</div>
         </div>
       </div>
 
