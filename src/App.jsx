@@ -1,12 +1,10 @@
 export default function App() {
   const services = [
     {
-      title: "Funding & Government Program Alignment",
+      
+      title: "Grants & Funding Support",
       description:
-        "
-      title: "Tender Writing, Grants & Government Funding Support",
-      description:
-        "Practical support for enterprises to build capability, strengthen commercial positioning, and compete with confidence.",
+        "Practical support to build capability, navigate government funding processes, and deliver outcomes in complex operating environments.",
     },
     {
       title: "Organisational Performance, Quality Assurance & Revenue Growth",
