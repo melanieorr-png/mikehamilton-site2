@@ -1,111 +1,155 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>National Skills Agreement Consultant | Mike Hamilton</title>
-    <meta
-      name="description"
-      content="Expert support for National Skills Agreement funding, VET strategy, RTO performance and tender success across Australia, including NT and remote delivery."
-    />
-    <meta
-      name="keywords"
-      content="National Skills Agreement, VET funding, RTO consultant, Fee Free TAFE, training contracts, tender writing, government funding Australia, NT training, regional VET delivery"
-    />
-    <meta name="robots" content="index, follow" />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="min-h-screen bg-slate-950 text-white">
-    <section class="mx-auto max-w-5xl px-6 py-20 lg:px-8">
-      <a href="/" class="inline-block mb-8 text-cyan-300 underline">
-        Back to Home
-      </a>
+export default function App() {
+  const services = [
+    {
+      title: "Tender Writing, Grants & Government Funding Support",
+      description:
+        "Practical support for enterprises to build capability, strengthen commercial positioning, and compete with confidence.",
+    },
+    {
+      title: "Organisational Performance, Quality Assurance & Revenue Growth",
+      description:
+        "Support RTOs and businesses to strengthen performance, improve commercial outcomes, and enhance financial sustainability.",
+    },
+    {
+      title: "Remote & Regional VET Leadership",
+      description:
+        "25 years in delivering high-impact VET across remote, regional and Indigenous communities.",
+    },
+    {
+      title: "National Skills Agreement & Other Funding Opportunities",
+      description:
+        "Position organisations to win and retain government funding under the National Skills Agreement and other funding models.",
+    },
+    {
+      title: "Executive Advisory & Board Support",
+      description:
+        "Trusted advisor to CEOs, Boards and Executives on governance, performance, change management and reform.",
+    },
+    {
+      title: "Sector Positioning & Market Benchmarking",
+      description:
+        "Analyse competition and position your organisation in niche and priority markets. Leverage NCVER data and other sources to inform strategy, strengthen market positioning and improve competitive performance.",
+    },
+  ];
 
-      <h1 class="text-4xl sm:text-5xl font-semibold tracking-tight">
-        National Skills Agreement (NSA): VET Funding, RTO Strategy & Delivery
-      </h1>
+  return (
+    <div className="min-h-screen bg-slate-950 text-white">
 
-      <p class="mt-6 text-xl text-slate-300">
-        The National Skills Agreement (NSA) is a major investment in vocational education and training across Australia. It focuses on targeted investment in key priorities for the Commonwealth of Australia. For Registered Training Organisations, businesses and government partners, success under the NSA requires strategic alignment, strong positioning and the ability to deliver real workforce outcomes.
-      </p>
+      {/* TOP LOGO */}
+      <div className="w-full bg-slate-950 py-6 flex justify-center border-b border-white/10">
+        <img
+          src="/logo3.PNG"
+          alt="Mike Hamilton logo"
+          className="h-28 md:h-40"
+        />
+      </div>
 
-      <p class="mt-4 text-lg text-cyan-300">
-        Proven delivery across the Northern Territory and remote Australia — where complexity, remoteness and workforce challenges demand a different level of expertise.
-      </p>
-    </section>
+      {/* BRAND TAG */}
+      <div className="flex justify-center mt-6">
+        <div className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs text-slate-200">
+          Mike Hamilton | VET Specialist & Advisor
+        </div>
+      </div>
 
-    <section class="mx-auto max-w-5xl px-6 py-12">
-      <h2 class="text-3xl font-semibold">What is the National Skills Agreement?</h2>
-      <p class="mt-6 text-slate-300">
-        The National Skills Agreement is a funding framework between the Australian Government and state and territory governments that sets the direction for vocational education and training delivery, investment and reform.
-      </p>
-      <p class="mt-4 text-slate-300">
-        It focuses on priority industries, workforce demand and improved outcomes for learners, while strengthening accountability and performance expectations across the VET system.
-      </p>
-    </section>
+      {/* HERO */}
+      <section className="relative overflow-hidden border-b border-white/10">
+        <div className="relative mx-auto max-w-7xl px-6 pb-24 pt-12 lg:px-8">
 
-    <section class="mx-auto max-w-5xl px-6 py-12">
-      <h2 class="text-3xl font-semibold">Why the NSA Matters for RTOs and Businesses</h2>
-      <ul class="mt-6 space-y-4 text-slate-300 list-disc pl-6">
-        <li>Directly influences access to government investment</li>
-        <li>Shapes training priorities and delivery expectations</li>
-        <li>Determines competitiveness in tender and contract processes</li>
-        <li>Requires alignment with workforce and industry demand</li>
-      </ul>
-    </section>
+          <div className="grid lg:grid-cols-2 gap-6 items-start">
 
-    <section class="mx-auto max-w-5xl px-6 py-12">
-      <h2 class="text-3xl font-semibold">How Organisations Access VET Funding Under the NSA</h2>
-      <p class="mt-6 text-slate-300">
-        Funding is typically accessed through state and territory government contracts, competitive tenders and alignment with government priorities such as targeted workforce initiatives.
-      </p>
-      <p class="mt-4 text-slate-300">
-        Success requires strong positioning, clear alignment to industry demand, and the ability to demonstrate delivery capability — particularly in regional and remote environments.
-      </p>
-    </section>
+            {/* LEFT SIDE */}
+            <div className="max-w-2xl">
+              <h1 className="text-5xl font-semibold sm:text-6xl leading-tight">
+                High-Performance VET Leadership, Governance, Corporate Strategy and Workforce Management
+              </h1>
 
-    <section class="mx-auto max-w-5xl px-6 py-12">
-      <h2 class="text-3xl font-semibold">Common Challenges Organisations Face</h2>
-      <ul class="mt-6 space-y-4 text-slate-300 list-disc pl-6">
-        <li>Misalignment with government priorities</li>
-        <li>Weak or generic tender and grant applications</li>
-        <li>Limited understanding of jurisdictional funding requirements</li>
-        <li>Difficulty delivering in regional, remote or complex environments</li>
-        <li>Underdeveloped commercial and funding strategies</li>
-      </ul>
-    </section>
+              <p className="mt-4 text-lg italic text-cyan-300">
+                “I’ve delivered results in some of the most challenging and complex environments across Australia and beyond.”
+              </p>
 
-    <section class="mx-auto max-w-5xl px-6 py-12">
-      <h2 class="text-3xl font-semibold">How to Succeed</h2>
-      <p class="mt-6 text-slate-300">
-        Mike provides executive-level advice to help organisations secure funding, strengthen performance and deliver high-impact training aligned to government priorities.
-      </p>
-      <ul class="mt-6 space-y-4 text-slate-300 list-disc pl-6">
-        <li>National Skills Agreement and government priorities</li>
-        <li>Tender writing and government contract positioning</li>
-        <li>RTO performance, quality assurance and commercial revenue growth</li>
-        <li>Training profile planning and workforce alignment</li>
-        <li>Specialist support for remote and regional locations and thin markets</li>
-      </ul>
-    </section>
+              <p className="mt-6 text-xl text-slate-300">
+                Helping organisations align with government priorities and deliver high-impact training across Australia.
+              </p>
 
-    <section class="mx-auto max-w-5xl px-6 py-20 text-center">
-      <div class="rounded-[2rem] border border-cyan-400/20 bg-gradient-to-br from-cyan-500/10 to-slate-900 p-10 shadow-2xl">
-        <h2 class="text-3xl font-semibold">
-          Strengthen Your Organisation
+              <div className="mt-10 flex gap-4">
+                <a
+                  href="/national-skills-agreement.html"
+                  className="rounded-2xl bg-white px-6 py-3 text-sm text-slate-950"
+                >
+                  National Skills Agreement Guide
+                </a>
+              </div>
+            </div>
+
+            {/* RIGHT SIDE - PROFILE */}
+            <div className="flex justify-center lg:justify-start lg:-ml-6">
+              <div className="relative mt-2">
+
+                {/* Glow */}
+                <div className="absolute inset-0 rounded-full bg-cyan-500/20 blur-2xl"></div>
+
+                {/* Image */}
+                <img
+                  src="/mhprofile.JPG"
+                  alt="Mike Hamilton"
+                  className="relative w-64 h-64 md:w-72 md:h-72 object-cover rounded-full border-4 border-white/10 shadow-2xl"
+                />
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* SERVICES */}
+      <section className="mx-auto max-w-7xl px-6 py-16">
+        <h2 className="text-3xl font-semibold text-center">
+          Specialisations
         </h2>
-        <p class="mt-4 text-slate-300">
-          If you are looking to strengthen your funding position, improve tender success or align your organisation to government priorities, now is the time to act.
-        </p>
-        <div class="mt-8">
+
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
+          {services.map((service) => (
+            <div
+              key={service.title}
+              className="rounded-2xl border border-white/10 p-8"
+            >
+              <h3 className="text-xl font-semibold">{service.title}</h3>
+              <p className="mt-4 text-slate-300">{service.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* CONTACT */}
+      <section className="mx-auto max-w-7xl px-6 py-20 text-center">
+        <h2 className="text-3xl font-semibold">
+          Contact Mike Hamilton
+        </h2>
+
+        <div className="mt-6 text-slate-300">
+          <p>📞 +61 400 465 239</p>
+          <p>✉️ michaelhamilton9@bigpond.com</p>
+        </div>
+
+        <div className="mt-8">
           <a
             href="mailto:michaelhamilton9@bigpond.com"
-            class="inline-flex items-center gap-2 rounded-2xl bg-white px-8 py-4 text-sm font-semibold text-slate-950"
+            className="inline-flex items-center gap-2 rounded-2xl bg-white px-8 py-4 text-sm font-semibold text-slate-950"
           >
             Book a Consultation
           </a>
         </div>
-      </div>
-    </section>
-  </body>
-</html>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="border-t border-white/10 bg-slate-950/80">
+        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-8 text-sm text-slate-400 lg:flex-row lg:items-center lg:justify-between">
+          <p>© {new Date().getFullYear()} Mike Hamilton</p>
+          <p>ABN 67 680 975 723</p>
+        </div>
+      </footer>
+
+    </div>
+  );
+}
