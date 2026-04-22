@@ -43,21 +43,20 @@ export default function App() {
         />
       </div>
 
-      {/* BRAND TAG */}
+      {/* BRAND TAG + LINKEDIN */}
       <div className="flex justify-center mt-6">
         <div className="flex items-center gap-3">
-  <div className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs text-slate-200">
-    Mike Hamilton | VET Specialist & Advisor
-  </div>
-  <a
-    href="https://www.linkedin.com/in/mikehamilton"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-xs text-cyan-300 hover:underline"
-  >
-    LinkedIn
-  </a>
-</div>
+          <div className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs text-slate-200">
+            Mike Hamilton | VET Specialist & Advisor
+          </div>
+          <a
+            href="https://www.linkedin.com/in/mikehamilton"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-cyan-300 hover:underline"
+          >
+            LinkedIn
+          </a>
         </div>
       </div>
 
@@ -98,7 +97,7 @@ export default function App() {
               </div>
             </div>
 
-            {/* RIGHT IMAGE + GROWTH GRAPH */}
+            {/* RIGHT IMAGE + GRAPH */}
             <div className="flex justify-center lg:justify-start lg:-ml-6">
               <div className="relative mt-2 w-full max-w-md">
                 <div className="absolute top-6 left-1/2 -translate-x-1/2 w-72 h-72 rounded-full bg-cyan-500/20 blur-3xl"></div>
@@ -107,56 +106,30 @@ export default function App() {
                   <img
                     src="/mhprofile.JPG"
                     alt="Mike Hamilton"
-                    className="relative w-64 h-64 md:w-72 md:h-72 object-cover rounded-full border-4 border-white/10 shadow-2xl"
+                    className="w-64 h-64 md:w-72 md:h-72 object-cover rounded-full border-4 border-white/10 shadow-2xl"
                   />
                 </div>
 
                 <div className="relative -mt-6 z-0">
-                  <svg
-                    viewBox="0 0 500 180"
-                    className="w-full h-auto"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                  <svg viewBox="0 0 500 180" className="w-full h-auto" fill="none">
                     <path
-                      d="M20 145 C90 140, 120 130, 170 120 C220 110, 245 115, 290 90 C340 62, 385 78, 470 20"
+                      d="M20 145 C90 140,120 130,170 120 C220 110,245 115,290 90 C340 62,385 78,470 20"
                       stroke="rgba(34,211,238,0.18)"
                       strokeWidth="18"
                       strokeLinecap="round"
                     />
                     <path
-                      d="M20 145 C90 140, 120 130, 170 120 C220 110, 245 115, 290 90 C340 62, 385 78, 470 20"
+                      d="M20 145 C90 140,120 130,170 120 C220 110,245 115,290 90 C340 62,385 78,470 20"
                       stroke="rgb(34,211,238)"
                       strokeWidth="4"
                       strokeLinecap="round"
-                    />
-                    <path
-                      d="M452 18 L470 20 L460 36"
-                      stroke="rgb(34,211,238)"
-                      strokeWidth="4"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <circle cx="110" cy="134" r="4" fill="rgb(34,211,238)" />
-                    <circle cx="205" cy="114" r="4" fill="rgb(34,211,238)" />
-                    <circle cx="300" cy="86" r="4" fill="rgb(34,211,238)" />
-                    <circle cx="390" cy="66" r="4" fill="rgb(34,211,238)" />
-                    <line
-                      x1="20"
-                      y1="160"
-                      x2="480"
-                      y2="160"
-                      stroke="rgba(255,255,255,0.08)"
-                      strokeWidth="1"
                     />
                   </svg>
                 </div>
 
-                <div className="mt-2 text-center">
-                  <p className="text-sm text-slate-400">
-                    Strategy. Performance. Growth.
-                  </p>
-                </div>
+                <p className="text-center text-sm text-slate-400 mt-2">
+                  Strategy. Performance. Growth.
+                </p>
               </div>
             </div>
           </div>
@@ -184,15 +157,26 @@ export default function App() {
       <section className="mx-auto max-w-7xl px-6 py-20 text-center">
         <h2 className="text-3xl font-semibold">Contact Mike Hamilton</h2>
 
-        <div className="mt-6 text-slate-300">
+        <div className="mt-6 text-slate-300 space-y-2">
           <p>📞 +61 400 465 239</p>
           <p>✉️ michaelhamilton9@bigpond.com</p>
+          <p>
+            🔗{" "}
+            <a
+              href="https://www.linkedin.com/in/mikehamilton"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cyan-300 hover:underline"
+            >
+              View LinkedIn Profile
+            </a>
+          </p>
         </div>
 
         <div className="mt-8">
           <a
             href="mailto:michaelhamilton9@bigpond.com"
-            className="inline-flex items-center gap-2 rounded-2xl bg-white px-8 py-4 text-sm font-semibold text-slate-950 hover:bg-cyan-300 transition"
+            className="inline-flex items-center rounded-2xl bg-white px-8 py-4 text-sm font-semibold text-slate-950 hover:bg-cyan-300 transition"
           >
             Contact Mike
           </a>
