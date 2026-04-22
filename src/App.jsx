@@ -1,25 +1,24 @@
 export default function App() {
   const services = [
     {
-      
       title: "Grants & Funding Support",
       description:
         "Practical support to build capability, navigate government funding processes, and deliver outcomes in complex operating environments.",
     },
     {
-      title: "Organisational Performance, Quality Assurance & Revenue Growth",
+      title: "Organisational Performance, Quality Assurance & Sustainable Growth",
       description:
-        "Support RTOs and businesses to strengthen performance, improve commercial outcomes, and enhance financial sustainability.",
+        "Support RTOs and businesses to strengthen performance, improve organisational outcomes, and enhance long-term sustainability.",
     },
     {
       title: "Remote & Regional VET Leadership",
       description:
-        "25 years in delivering high-impact VET across remote, regional and Indigenous communities.",
+        "Over 25 years delivering high-impact VET across remote, regional and Indigenous communities.",
     },
     {
-      title: "National Skills Agreement & Other Funding Opportunities",
+      title: "National Skills Agreement & Funding Reform",
       description:
-        "Position organisations to understand government funding under the National Skills Agreement and other funding models.",
+        "Support organisations to understand government priorities, align with reform settings, and respond to opportunities under the National Skills Agreement and other funding models.",
     },
     {
       title: "Executive Advisory & Board Support",
@@ -29,7 +28,7 @@ export default function App() {
     {
       title: "Sector Positioning & Market Benchmarking",
       description:
-        "Analyse competition and position your organisation in niche and priority markets. Leverage NCVER data and other sources to inform strategy, strengthen market positioning and improve competitive performance.",
+        "Analyse market conditions and position organisations in niche and priority areas. Leverage NCVER data and other sources to inform strategy, strengthen market positioning, and support sustainable growth.",
     },
   ];
 
@@ -83,7 +82,7 @@ export default function App() {
                   href="mailto:michaelhamilton9@bigpond.com"
                   className="rounded-2xl border border-white/20 px-6 py-3 text-sm font-semibold text-white hover:border-cyan-300 hover:text-cyan-300 transition"
                 >
-                  Book a Consultation
+                  Contact Mike
                 </a>
               </div>
             </div>
@@ -91,10 +90,8 @@ export default function App() {
             {/* RIGHT IMAGE + GROWTH GRAPH */}
             <div className="flex justify-center lg:justify-start lg:-ml-6">
               <div className="relative mt-2 w-full max-w-md">
-                {/* glow behind profile */}
                 <div className="absolute top-6 left-1/2 -translate-x-1/2 w-72 h-72 rounded-full bg-cyan-500/20 blur-3xl"></div>
 
-                {/* profile */}
                 <div className="relative flex justify-center z-10">
                   <img
                     src="/mhprofile.JPG"
@@ -103,7 +100,6 @@ export default function App() {
                   />
                 </div>
 
-                {/* growth graph under profile */}
                 <div className="relative -mt-6 z-0">
                   <svg
                     viewBox="0 0 500 180"
@@ -111,23 +107,18 @@ export default function App() {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    {/* soft glow line */}
                     <path
                       d="M20 145 C90 140, 120 130, 170 120 C220 110, 245 115, 290 90 C340 62, 385 78, 470 20"
                       stroke="rgba(34,211,238,0.18)"
                       strokeWidth="18"
                       strokeLinecap="round"
                     />
-
-                    {/* main line */}
                     <path
                       d="M20 145 C90 140, 120 130, 170 120 C220 110, 245 115, 290 90 C340 62, 385 78, 470 20"
                       stroke="rgb(34,211,238)"
                       strokeWidth="4"
                       strokeLinecap="round"
                     />
-
-                    {/* arrow head */}
                     <path
                       d="M452 18 L470 20 L460 36"
                       stroke="rgb(34,211,238)"
@@ -135,14 +126,10 @@ export default function App() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                     />
-
-                    {/* data points */}
                     <circle cx="110" cy="134" r="4" fill="rgb(34,211,238)" />
                     <circle cx="205" cy="114" r="4" fill="rgb(34,211,238)" />
                     <circle cx="300" cy="86" r="4" fill="rgb(34,211,238)" />
                     <circle cx="390" cy="66" r="4" fill="rgb(34,211,238)" />
-
-                    {/* subtle baseline */}
                     <line
                       x1="20"
                       y1="160"
@@ -154,7 +141,6 @@ export default function App() {
                   </svg>
                 </div>
 
-                {/* caption */}
                 <div className="mt-2 text-center">
                   <p className="text-sm text-slate-400">
                     Strategy. Performance. Growth.
@@ -197,7 +183,7 @@ export default function App() {
             href="mailto:michaelhamilton9@bigpond.com"
             className="inline-flex items-center gap-2 rounded-2xl bg-white px-8 py-4 text-sm font-semibold text-slate-950 hover:bg-cyan-300 transition"
           >
-            Book a Consultation
+            Contact Mike
           </a>
         </div>
       </section>
