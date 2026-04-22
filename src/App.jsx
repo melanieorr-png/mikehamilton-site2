@@ -1,6 +1,3 @@
-import profileImg from "../public/mhprofile.JPG";
-import logoImg from "../public/logo3.PNG";
-
 export default function App() {
   const services = [
     {
@@ -11,207 +8,144 @@ export default function App() {
     {
       title: "Organisational Performance, Quality Assurance & Revenue Growth",
       description:
-        "Support organisations to strengthen performance, improve commercial outcomes, and enhance financial sustainability.",
+        "Support RTOs and businesses to strengthen performance, improve commercial outcomes, and enhance financial sustainability.",
     },
     {
       title: "Remote & Regional VET Leadership",
       description:
-        "Specialist expertise in delivering high-impact VET across remote, regional and Indigenous communities.",
+        "25 years in delivering high-impact VET across remote, regional and Indigenous communities.",
     },
     {
-      title: "National Skills Agreement & VET Funding Strategy",
-      description: (
-        <>
-          Position your organisation to secure and sustain funding under the{" "}
-          <a
-            href="https://www.dewr.gov.au/national-skills-agreement"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sky-400 underline hover:text-sky-300"
-          >
-            National Skills Agreement
-          </a>
-          , including priority areas such as Closing the Gap, Centres of
-          Excellence, and regional workforce delivery.
-          <br />
-          <br />
-          While the National Skills Agreement sets national priorities, delivery
-          in the Northern Territory requires a fundamentally different approach —
-          including remote delivery models, workforce mobility, and culturally
-          responsive training. This is where Mike’s experience translates into
-          real competitive advantage.
-        </>
-      ),
+      title: "National Skills Agreement & Other Funding Opportunities",
+      description:
+        "Position organisations to win and retain government funding under the National Skills Agreement and other funding models.",
     },
     {
       title: "Executive Advisory & Board Support",
       description:
-        "Trusted advisor to CEOs, Boards and Executives on governance, performance, and reform.",
+        "Trusted advisor to CEOs, Boards and Executives on governance, performance, change management and reform.",
     },
     {
-      title: "Sector Positioning & Competition Benchmarking",
+      title: "Sector Positioning & Market Benchmarking",
       description:
-        "Operate confidently in niche markets by interpreting NCVER data and other sector intelligence to position your organisation for growth and competitiveness.",
+        "Analyse competition and position your organisation in niche and priority markets. Leverage NCVER data and other sources to inform strategy, strengthen market positioning and improve competitive performance.",
     },
   ];
 
   return (
     <div className="min-h-screen bg-slate-950 text-white">
-      <div className="max-w-7xl mx-auto px-6 py-8">
-        {/* Top logo */}
-        <div className="flex justify-center md:justify-start mb-8">
-          <img
-            src={logoImg}
-            alt="Mike Hamilton logo"
-            className="h-24 md:h-32 w-auto object-contain"
-          />
+
+      {/* TOP LOGO */}
+      <div className="w-full bg-slate-950 py-6 flex justify-center border-b border-white/10">
+        <img
+          src="/logo3.PNG"
+          alt="Mike Hamilton logo"
+          className="h-28 md:h-40"
+        />
+      </div>
+
+      {/* BRAND TAG */}
+      <div className="flex justify-center mt-6">
+        <div className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs text-slate-200">
+          Mike Hamilton | VET Specialist & Advisor
+        </div>
+      </div>
+
+      {/* HERO */}
+      <section className="relative overflow-hidden border-b border-white/10">
+        <div className="relative mx-auto max-w-7xl px-6 pb-24 pt-12 lg:px-8">
+
+          <div className="grid lg:grid-cols-2 gap-6 items-start">
+
+            {/* LEFT */}
+            <div className="max-w-2xl">
+              <h1 className="text-5xl font-semibold sm:text-6xl leading-tight">
+                High-Performance VET Leadership, Governance, Corporate Strategy and Workforce Management
+              </h1>
+
+              <p className="mt-4 text-lg italic text-cyan-300">
+                “I’ve delivered results in some of the most challenging and complex environments across Australia and beyond.”
+              </p>
+
+              <p className="mt-6 text-xl text-slate-300">
+                Helping organisations align with government priorities and deliver high-impact training across Australia.
+              </p>
+
+              <div className="mt-10 flex gap-4">
+                <a
+                  href="/national-skills-agreement.html"
+                  className="rounded-2xl bg-white px-6 py-3 text-sm text-slate-950"
+                >
+                  National Skills Agreement Guide
+                </a>
+              </div>
+            </div>
+
+            {/* RIGHT IMAGE */}
+            <div className="flex justify-center lg:justify-start lg:-ml-6">
+              <div className="relative mt-2">
+                <div className="absolute inset-0 rounded-full bg-cyan-500/20 blur-2xl"></div>
+
+                <img
+                  src="/mhprofile.JPG"
+                  alt="Mike Hamilton"
+                  className="relative w-64 h-64 md:w-72 md:h-72 object-cover rounded-full border-4 border-white/10 shadow-2xl"
+                />
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* SERVICES */}
+      <section className="mx-auto max-w-7xl px-6 py-16">
+        <h2 className="text-3xl font-semibold text-center">
+          Specialisations
+        </h2>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
+          {services.map((service) => (
+            <div
+              key={service.title}
+              className="rounded-2xl border border-white/10 p-8"
+            >
+              <h3 className="text-xl font-semibold">{service.title}</h3>
+              <p className="mt-4 text-slate-300">{service.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* CONTACT */}
+      <section className="mx-auto max-w-7xl px-6 py-20 text-center">
+        <h2 className="text-3xl font-semibold">
+          Contact Mike Hamilton
+        </h2>
+
+        <div className="mt-6 text-slate-300">
+          <p>📞 +61 400 465 239</p>
+          <p>✉️ michaelhamilton9@bigpond.com</p>
         </div>
 
-        {/* Hero Section */}
-        <section className="grid md:grid-cols-2 gap-10 items-center py-10">
-          <div>
-            <p className="text-sky-400 font-semibold tracking-[0.2em] uppercase text-sm mb-4">
-              Strategic VET Consulting
-            </p>
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-              High-Performance VET Leadership for Growth, Reform and Results
-            </h1>
-            <p className="text-slate-300 text-lg leading-relaxed mb-6">
-              Mike Hamilton provides specialist consulting across vocational
-              education, government funding, organisational performance, and
-              remote delivery strategy. He works with leaders who need practical
-              advice, strong execution, and a clear path to growth.
-            </p>
+        <div className="mt-8">
+          <a
+            href="mailto:michaelhamilton9@bigpond.com"
+            className="inline-flex items-center gap-2 rounded-2xl bg-white px-8 py-4 text-sm font-semibold text-slate-950"
+          >
+            Book a Consultation
+          </a>
+        </div>
+      </section>
 
-            <div className="space-y-2 text-slate-200 mb-8">
-              <p>
-                <strong>Email:</strong>{" "}
-                <a
-                  href="mailto:info@mikehamilton.com.au"
-                  className="text-sky-400 hover:text-sky-300"
-                >
-                  info@mikehamilton.com.au
-                </a>
-              </p>
-              <p>
-                <strong>Website:</strong>{" "}
-                <a
-                  href="https://mikehamilton.com.au"
-                  className="text-sky-400 hover:text-sky-300"
-                >
-                  mikehamilton.com.au
-                </a>
-              </p>
-            </div>
+      {/* FOOTER */}
+      <footer className="border-t border-white/10 bg-slate-950/80">
+        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-8 text-sm text-slate-400 lg:flex-row lg:items-center lg:justify-between">
+          <p>© {new Date().getFullYear()} Mike Hamilton</p>
+          <p>ABN 67 680 975 723</p>
+        </div>
+      </footer>
 
-            <div className="flex flex-wrap gap-4">
-              <a
-                href="mailto:info@mikehamilton.com.au"
-                className="bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold px-6 py-3 rounded-2xl shadow-lg transition"
-              >
-                Contact Mike
-              </a>
-              <a
-                href="#services"
-                className="border border-slate-600 hover:border-sky-400 hover:text-sky-300 px-6 py-3 rounded-2xl transition"
-              >
-                View Services
-              </a>
-            </div>
-          </div>
-
-          <div className="flex justify-center md:justify-end">
-            <div className="relative">
-              <div className="absolute inset-0 rounded-full bg-sky-500/20 blur-3xl scale-110"></div>
-              <img
-                src={profileImg}
-                alt="Mike Hamilton"
-                className="relative w-72 h-72 md:w-96 md:h-96 object-cover rounded-full border-4 border-sky-400 shadow-2xl"
-              />
-            </div>
-          </div>
-        </section>
-
-        {/* About */}
-        <section className="py-12 border-t border-slate-800">
-          <div className="max-w-4xl">
-            <h2 className="text-3xl font-bold mb-4">About Mike</h2>
-            <p className="text-slate-300 leading-relaxed text-lg">
-              Mike Hamilton is a senior VET executive and trusted advisor with
-              deep experience across training, funding strategy, operational
-              performance, and public sector engagement. He brings a strong
-              track record in helping organisations navigate complexity, respond
-              to reform, and position themselves for sustainable growth.
-            </p>
-          </div>
-        </section>
-
-        {/* Services */}
-        <section id="services" className="py-12 border-t border-slate-800">
-          <h2 className="text-3xl font-bold mb-8">Services</h2>
-          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-lg hover:border-sky-500/50 transition"
-              >
-                <h3 className="text-xl font-semibold mb-3 text-white">
-                  {service.title}
-                </h3>
-                <div className="text-slate-300 leading-relaxed">
-                  {service.description}
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* NT Differentiator */}
-        <section className="py-12 border-t border-slate-800">
-          <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8">
-            <h2 className="text-3xl font-bold mb-4">
-              Why NT and Remote Delivery Experience Matters
-            </h2>
-            <p className="text-slate-300 text-lg leading-relaxed">
-              Delivering successful VET outcomes in the Northern Territory is
-              not the same as delivering in metropolitan settings. Remote
-              logistics, workforce mobility, cultural capability, thin markets,
-              and service access all shape what good delivery looks like. Mike’s
-              experience in these environments means clients gain advice that is
-              practical, grounded, and built for real conditions — not just
-              policy theory.
-            </p>
-          </div>
-        </section>
-
-        {/* CTA */}
-        <section className="py-12 border-t border-slate-800">
-          <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ready to strengthen your position?
-            </h2>
-            <p className="text-slate-300 text-lg mb-6">
-              Whether you need support with funding strategy, organisational
-              performance, reform, or remote delivery, Mike can help you move
-              with confidence.
-            </p>
-            <a
-              href="mailto:info@mikehamilton.com.au"
-              className="inline-block bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold px-8 py-4 rounded-2xl shadow-lg transition"
-            >
-              Get in Touch
-            </a>
-          </div>
-        </section>
-
-        {/* Footer */}
-        <footer className="py-8 border-t border-slate-800 text-slate-400 text-sm">
-          <div className="flex flex-col md:flex-row justify-between gap-4">
-            <p>© {new Date().getFullYear()} Mike Hamilton. All rights reserved.</p>
-            <p>Strategic VET Leadership | Funding | Performance | Reform</p>
-          </div>
-        </footer>
-      </div>
     </div>
   );
 }
