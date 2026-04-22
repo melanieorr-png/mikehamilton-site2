@@ -25,6 +25,11 @@ export default function App() {
       description:
         "Trusted advisor to CEOs, Boards and Executives on governance, performance, change management and reform.",
     },
+    {
+      title: "Sector Positioning & Market Benchmarking",
+      description:
+        "Analyse competition and position your organisation in niche and priority markets. Leverage NCVER data and other sources to inform strategy, strengthen market positioning and improve competitive performance.",
+    },
   ];
 
   return (
