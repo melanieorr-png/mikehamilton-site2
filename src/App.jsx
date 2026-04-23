@@ -112,7 +112,7 @@ export default function App() {
                   />
                 </div>
 
-                <div className="relative -mt-6 z-0">
+                <div className="relative mt-4 z-20">
                   <svg viewBox="0 0 500 180" className="w-full h-auto" fill="none">
                     <path
                       d="M20 145 C90 140,120 130,170 120 C220 110,245 115,290 90 C340 62,385 78,470 20"
