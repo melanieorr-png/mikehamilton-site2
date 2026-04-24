@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/react";
+
 export default function App() {
   const services = [
     {
@@ -195,6 +197,8 @@ export default function App() {
           <p>ABN 67 680 975 723</p>
         </div>
       </footer>
+
+      <Analytics />
     </div>
   );
 }
