@@ -1,3 +1,4 @@
+```jsx
 import { Analytics } from "@vercel/analytics/react";
 
 export default function App() {
@@ -56,6 +57,7 @@ export default function App() {
           <div className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs text-slate-200">
             Mike Hamilton | VET Specialist & Advisor
           </div>
+
           <a
             href="https://www.linkedin.com/in/michael-hamilton-bb8794b0/"
             target="_blank"
@@ -93,6 +95,7 @@ export default function App() {
                 >
                   National Skills Agreement Guide
                 </a>
+
                 <a
                   href="mailto:michaelhamilton9@bigpond.com"
                   className="rounded-2xl border border-white/20 px-6 py-3 text-sm font-semibold text-white hover:border-cyan-300 hover:text-cyan-300 transition"
@@ -115,13 +118,18 @@ export default function App() {
                 </div>
 
                 <div className="relative mt-4 z-20">
-                  <svg viewBox="0 0 500 180" className="w-full h-auto" fill="none">
+                  <svg
+                    viewBox="0 0 500 180"
+                    className="w-full h-auto"
+                    fill="none"
+                  >
                     <path
                       d="M20 145 C90 140,120 130,170 120 C220 110,245 115,290 90 C340 62,385 78,470 20"
                       stroke="rgba(34,211,238,0.18)"
                       strokeWidth="18"
                       strokeLinecap="round"
                     />
+
                     <path
                       d="M20 145 C90 140,120 130,170 120 C220 110,245 115,290 90 C340 62,385 78,470 20"
                       stroke="rgb(34,211,238)"
@@ -141,33 +149,42 @@ export default function App() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-16">
-        <h2 className="text-3xl font-semibold text-center">Specialisations</h2>
+        <h2 className="text-3xl font-semibold text-center">
+          Specialisations
+        </h2>
 
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {services.map((service) => (
-            <div
+            <a
               key={service.title}
-              className="rounded-2xl border border-white/10 p-8 bg-slate-900/50"
+              href={service.path}
+              className="group rounded-2xl border border-white/10 p-8 bg-slate-900/50 hover:border-cyan-300/50 hover:shadow-xl hover:shadow-cyan-500/10 hover:-translate-y-1 transition-all duration-300"
             >
-              <a
-                href={service.path}
-                className="text-xl font-semibold hover:text-cyan-300 transition"
-              >
+              <h3 className="text-xl font-semibold group-hover:text-cyan-300 transition">
                 {service.title}
-              </a>
+              </h3>
 
-              <p className="mt-4 text-slate-300">{service.description}</p>
-            </div>
+              <p className="mt-4 text-slate-300">
+                {service.description}
+              </p>
+
+              <div className="mt-6 inline-flex items-center rounded-full bg-cyan-400 px-5 py-2 text-sm font-semibold text-slate-950 group-hover:bg-white transition">
+                Learn More →
+              </div>
+            </a>
           ))}
         </div>
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-20 text-center">
-        <h2 className="text-3xl font-semibold">Contact Mike Hamilton</h2>
+        <h2 className="text-3xl font-semibold">
+          Contact Mike Hamilton
+        </h2>
 
         <div className="mt-6 text-slate-300 space-y-2">
           <p>📞 +61 400 465 239</p>
           <p>✉️ michaelhamilton9@bigpond.com</p>
+
           <p>
             🔗{" "}
             <a
@@ -202,3 +219,4 @@ export default function App() {
     </div>
   );
 }
+```
