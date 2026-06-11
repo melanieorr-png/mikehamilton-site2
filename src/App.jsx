@@ -54,7 +54,7 @@ export default function App() {
       <div className="flex justify-center mt-6">
         <div className="flex items-center gap-3">
           <div className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs text-slate-200">
-            Mike Hamilton | VET Specialist & Advisor
+            Mike Hamilton | Tender & Grants Specialist | Senior VET Advisor
           </div>
 
           <a
