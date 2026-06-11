@@ -45,7 +45,7 @@ export default function App() {
     <div className="min-h-screen bg-slate-950 text-white">
       <div className="w-full bg-slate-950 py-6 flex justify-center border-b border-white/10">
         <img
-          src="/logo3.PNG"
+          src="/MHLogo.PNG"
           alt="Mike Hamilton logo"
           className="h-28 md:h-40"
         />
