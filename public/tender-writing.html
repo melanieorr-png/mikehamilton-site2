@@ -13,7 +13,7 @@
 
   <!-- HEADER -->
   <div class="border-b border-white/10 py-6 flex justify-center">
-    <img src="/mhlogo1.png" class="h-24" />
+    <img src="/mhlogo1.png" alt="Mike Hamilton logo" class="h-24" />
   </div>
 
   <!-- PAGE HERO -->
@@ -102,21 +102,85 @@
     </div>
   </section>
 
-  <!-- CTA -->
+  <!-- ENQUIRY FORM -->
   <section class="mx-auto max-w-5xl px-6 pb-20 text-center">
-    <h2 class="text-2xl font-semibold">Need support with tenders or funding?</h2>
+    <h2 class="text-2xl font-semibold">
+      Need support with tenders, grants or government funding?
+    </h2>
 
     <p class="mt-4 text-slate-400">
-      If you're navigating funding opportunities or preparing submissions,
-      Mike can help you position your organisation for success.
+      Please complete the enquiry form below. Mike will review your request and respond as soon as possible.
     </p>
 
-    <div class="mt-8">
-      <a href="mailto:michaelhamilton9@bigpond.com"
-        class="inline-flex items-center rounded-2xl bg-white px-8 py-4 text-sm font-semibold text-slate-950 hover:bg-cyan-300 transition">
-        Contact Mike
-      </a>
-    </div>
+    <form
+      action="https://formspree.io/f/xvznbrpn"
+      method="POST"
+      class="mt-10 max-w-2xl mx-auto space-y-4"
+    >
+
+      <select
+        name="enquiryType"
+        required
+        class="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
+      >
+        <option value="">Select Enquiry Type</option>
+        <option>Tender Writing & Grants</option>
+        <option>Government Funding Support</option>
+        <option>National Skills Agreement</option>
+        <option>Regional & Remote VET</option>
+        <option>Executive Advisory</option>
+        <option>Workforce Planning</option>
+        <option>Speaking Engagement</option>
+        <option>Partnership Opportunity</option>
+        <option>General Enquiry</option>
+      </select>
+
+      <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required
+        class="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
+      >
+
+      <input
+        type="text"
+        name="organisation"
+        placeholder="Organisation"
+        class="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
+      >
+
+      <input
+        type="email"
+        name="email"
+        placeholder="Email Address"
+        required
+        class="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
+      >
+
+      <input
+        type="tel"
+        name="phone"
+        placeholder="Phone Number (optional)"
+        class="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
+      >
+
+      <textarea
+        name="message"
+        rows="6"
+        placeholder="Tell Mike about your project, tender, grant or funding opportunity..."
+        required
+        class="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
+      ></textarea>
+
+      <button
+        type="submit"
+        class="inline-flex items-center rounded-2xl bg-white px-8 py-4 text-sm font-semibold text-slate-950 hover:bg-cyan-300 transition"
+      >
+        Send Enquiry
+      </button>
+
+    </form>
   </section>
 
   <!-- FOOTER -->
