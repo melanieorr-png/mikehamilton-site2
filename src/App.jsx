@@ -169,11 +169,11 @@ export default function App() {
 
       <section id="enquiry" className="mx-auto max-w-7xl px-6 py-20 text-center">
         <h2 className="text-3xl font-semibold">
-          Enquire About Consulting Services
+          Enquire with Mike
         </h2>
 
         <p className="mt-4 text-slate-300">
-          Please complete the enquiry form below and Mike will respond as soon as possible.
+          Please complete the enquiry form below or contact +61 0400 465 239.
         </p>
 
         <form
@@ -195,7 +195,6 @@ export default function App() {
             <option>Workforce Planning</option>
             <option>Speaking Engagement</option>
             <option>Partnership Opportunity</option>
-            <option>Media Enquiry</option>
           </select>
 
           <input
