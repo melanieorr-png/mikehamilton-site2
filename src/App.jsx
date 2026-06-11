@@ -96,7 +96,7 @@ export default function App() {
                 </a>
 
                 <a
-                  href="mailto:michaelhamilton9@bigpond.com"
+                  href="#enquiry"
                   className="rounded-2xl border border-white/20 px-6 py-3 text-sm font-semibold text-white hover:border-cyan-300 hover:text-cyan-300 transition"
                 >
                   Contact Mike
@@ -117,11 +117,7 @@ export default function App() {
                 </div>
 
                 <div className="relative mt-4 z-20">
-                  <svg
-                    viewBox="0 0 500 180"
-                    className="w-full h-auto"
-                    fill="none"
-                  >
+                  <svg viewBox="0 0 500 180" className="w-full h-auto" fill="none">
                     <path
                       d="M20 145 C90 140,120 130,170 120 C220 110,245 115,290 90 C340 62,385 78,470 20"
                       stroke="rgba(34,211,238,0.18)"
@@ -148,9 +144,7 @@ export default function App() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 py-16">
-        <h2 className="text-3xl font-semibold text-center">
-          Specialisations
-        </h2>
+        <h2 className="text-3xl font-semibold text-center">Specialisations</h2>
 
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {services.map((service) => (
@@ -163,9 +157,7 @@ export default function App() {
                 {service.title}
               </h3>
 
-              <p className="mt-4 text-slate-300">
-                {service.description}
-              </p>
+              <p className="mt-4 text-slate-300">{service.description}</p>
 
               <div className="mt-6 inline-flex items-center rounded-full bg-cyan-400 px-5 py-2 text-sm font-semibold text-slate-950 group-hover:bg-white transition">
                 Learn More →
@@ -175,36 +167,94 @@ export default function App() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-20 text-center">
+      <section id="enquiry" className="mx-auto max-w-7xl px-6 py-20 text-center">
         <h2 className="text-3xl font-semibold">
-          Contact Mike Hamilton
+          Enquire About Consulting Services
         </h2>
 
-        <div className="mt-6 text-slate-300 space-y-2">
-          <p>📞 +61 400 465 239</p>
-          <p>✉️ michaelhamilton9@bigpond.com</p>
+        <p className="mt-4 text-slate-300">
+          Please complete the enquiry form below and Mike will respond as soon as possible.
+        </p>
 
-          <p>
-            🔗{" "}
-            <a
-              href="https://www.linkedin.com/in/michael-hamilton-bb8794b0/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-cyan-300 hover:underline"
-            >
-              View LinkedIn Profile
-            </a>
-          </p>
-        </div>
-
-        <div className="mt-8">
-          <a
-            href="mailto:michaelhamilton9@bigpond.com"
-            className="inline-flex items-center rounded-2xl bg-white px-8 py-4 text-sm font-semibold text-slate-950 hover:bg-cyan-300 transition"
+        <form
+          action="https://formspree.io/f/xvznbrpn"
+          method="POST"
+          className="mt-8 max-w-2xl mx-auto space-y-4"
+        >
+          <select
+            name="enquiryType"
+            required
+            className="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
           >
-            Contact Mike
+            <option value="">Select Enquiry Type</option>
+            <option>General Enquiry</option>
+            <option>Tender Writing & Grants</option>
+            <option>National Skills Agreement</option>
+            <option>Regional & Remote VET</option>
+            <option>Executive Advisory</option>
+            <option>Workforce Planning</option>
+            <option>Speaking Engagement</option>
+            <option>Partnership Opportunity</option>
+            <option>Media Enquiry</option>
+          </select>
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            className="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
+          />
+
+          <input
+            type="text"
+            name="organisation"
+            placeholder="Organisation"
+            className="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
+          />
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+            className="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
+          />
+
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number (optional)"
+            className="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
+          />
+
+          <textarea
+            name="message"
+            rows="6"
+            placeholder="Tell Mike about your enquiry..."
+            required
+            className="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
+          ></textarea>
+
+          <button
+            type="submit"
+            className="rounded-2xl bg-white px-8 py-4 text-sm font-semibold text-slate-950 hover:bg-cyan-300 transition"
+          >
+            Send Enquiry
+          </button>
+        </form>
+
+        <p className="mt-6 text-sm text-slate-400">
+          Prefer to connect professionally?{" "}
+          <a
+            href="https://www.linkedin.com/in/michael-hamilton-bb8794b0/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-cyan-300 hover:underline"
+          >
+            View Mike’s LinkedIn profile
           </a>
-        </div>
+        </p>
       </section>
 
       <footer className="border-t border-white/10 bg-slate-950/80">
