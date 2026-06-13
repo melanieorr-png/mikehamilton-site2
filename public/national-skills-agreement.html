@@ -6,7 +6,6 @@
 
   <title>National Skills Agreement Consultant | Mike Hamilton</title>
 
-  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -14,7 +13,13 @@
 
   <!-- LOGO -->
   <div class="w-full py-6 flex justify-center border-b border-white/10">
-    <img src="/logo3.PNG" class="h-28 md:h-36" />
+    <a href="/">
+      <img
+        src="/mhlogo1.png"
+        alt="Mike Hamilton logo"
+        style="height:96px;width:auto;"
+      />
+    </a>
   </div>
 
   <!-- HERO -->
@@ -34,13 +39,14 @@
     </p>
 
     <div class="mt-8 flex justify-center gap-4 flex-wrap">
-      <a href="mailto:michaelhamilton9@bigpond.com"
+      <a href="#enquiry-form"
          class="bg-white text-slate-950 px-6 py-3 rounded-2xl font-semibold hover:bg-sky-400 transition">
-        Book a Consultation
+        Make an Enquiry
       </a>
 
       <a href="https://www.dewr.gov.au/national-skills-agreement"
          target="_blank"
+         rel="noopener noreferrer"
          class="border border-white/20 px-6 py-3 rounded-2xl hover:border-sky-400 hover:text-sky-400 transition">
         View Official NSA Info
       </a>
@@ -53,19 +59,17 @@
     <!-- LEFT CONTENT -->
     <div class="lg:col-span-2 space-y-8">
 
-      <!-- WHAT IS NSA -->
       <div class="bg-slate-900 border border-white/10 rounded-3xl p-8">
         <h2 class="text-2xl font-semibold mb-4">What is the National Skills Agreement?</h2>
         <p class="text-slate-300 leading-relaxed">
           The 
-          <a href="https://www.dewr.gov.au/national-skills-agreement" target="_blank" class="text-sky-400 underline">
+          <a href="https://www.dewr.gov.au/national-skills-agreement" target="_blank" rel="noopener noreferrer" class="text-sky-400 underline">
             National Skills Agreement (NSA)
           </a>
           is the Australian Government’s major national framework for vocational education and training reform. It commenced on 1 January 2024 as a 5-year agreement between the Commonwealth and states and territories to strengthen the VET sector.
         </p>
       </div>
 
-      <!-- WHY IT MATTERS -->
       <div class="bg-slate-900 border border-white/10 rounded-3xl p-8">
         <h2 class="text-2xl font-semibold mb-4">Why the NSA Matters for RTOs and Businesses</h2>
 
@@ -82,7 +86,6 @@
         </ul>
       </div>
 
-      <!-- NT DIFFERENCE -->
       <div class="bg-slate-900 border border-white/10 rounded-3xl p-8">
         <h2 class="text-2xl font-semibold mb-4">Why the Northern Territory is Different</h2>
 
@@ -95,7 +98,6 @@
         </p>
       </div>
 
-      <!-- HOW MIKE HELPS -->
       <div class="bg-slate-900 border border-white/10 rounded-3xl p-8">
         <h2 class="text-2xl font-semibold mb-4">How Mike Hamilton Can Help</h2>
 
@@ -113,19 +115,67 @@
     <!-- RIGHT COLUMN -->
     <div class="space-y-8">
 
-      <!-- CONTACT -->
-      <div class="bg-slate-900 border border-white/10 rounded-3xl p-8">
-        <h2 class="text-xl font-semibold mb-4">Contact Mike</h2>
+      <!-- ENQUIRY FORM -->
+      <div id="enquiry-form" class="bg-slate-900 border border-white/10 rounded-3xl p-8">
 
-        <p class="text-slate-300">
-          📞 +61 400 465 239<br>
-          ✉️ michaelhamilton9@bigpond.com
-        </p>
+        <h2 class="text-xl font-semibold mb-4">
+          Make an Enquiry
+        </h2>
 
-        <a href="mailto:michaelhamilton9@bigpond.com"
-           class="mt-6 inline-block w-full text-center bg-white text-slate-950 px-6 py-3 rounded-2xl font-semibold hover:bg-sky-400 transition">
-          Book a Consultation
-        </a>
+        <form
+          action="https://formspree.io/f/xvznbrpn"
+          method="POST"
+          class="space-y-4"
+        >
+
+          <select
+            name="enquiryType"
+            required
+            class="w-full rounded-xl border border-white/10 bg-slate-950 p-3 text-white"
+          >
+            <option value="">Select Enquiry Type</option>
+            <option>National Skills Agreement Advice</option>
+            <option>Funding Strategy</option>
+            <option>Tender Writing</option>
+            <option>Workforce Planning</option>
+            <option>Regional & Remote Delivery</option>
+            <option>Executive Advisory</option>
+            <option>General Enquiry</option>
+          </select>
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            class="w-full rounded-xl border border-white/10 bg-slate-950 p-3 text-white"
+          >
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+            class="w-full rounded-xl border border-white/10 bg-slate-950 p-3 text-white"
+          >
+
+          <textarea
+            name="message"
+            rows="4"
+            placeholder="How can Mike help?"
+            required
+            class="w-full rounded-xl border border-white/10 bg-slate-950 p-3 text-white"
+          ></textarea>
+
+          <button
+            type="submit"
+            class="w-full bg-white text-slate-950 px-6 py-3 rounded-2xl font-semibold hover:bg-sky-400 transition"
+          >
+            Send Enquiry
+          </button>
+
+        </form>
+
       </div>
 
       <!-- QUOTE -->
