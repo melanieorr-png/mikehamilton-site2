@@ -3,6 +3,12 @@ import { Analytics } from "@vercel/analytics/react";
 export default function App() {
   const services = [
     {
+      title: "AI Training - AI Made Simple",
+      path: "/ai-made-simple-register.html",
+      description:
+        "A practical, plain-English session on ChatGPT, Claude, Gemini and Copilot for Territory business owners and their teams. Register your interest — session details coming soon.",
+    },
+    {
       title: "Tender Writing, Grants & Government Funding Support",
       path: "/tender-writing.html",
       description:
@@ -38,12 +44,6 @@ export default function App() {
       path: "/sector-positioning.html",
       description:
         "Analyse market conditions and position organisations in niche and priority areas. Leverage NCVER data and other sources to inform strategy, strengthen market positioning, and support sustainable growth.",
-    },
-    {
-      title: "AI Made Simple — Plain-English AI Training",
-      path: "/ai-made-simple-register.html",
-      description:
-        "A practical, plain-English session on ChatGPT, Claude, Gemini and Copilot for Territory business owners and their teams. Register your interest — session details coming soon.",
     },
   ];
 
