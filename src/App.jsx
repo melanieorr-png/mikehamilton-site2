@@ -3,10 +3,10 @@ import { Analytics } from "@vercel/analytics/react";
 export default function App() {
   const services = [
     {
-      title: "Sector Positioning & Market Benchmarking",
-      path: "/sector-positioning.html",
+      title: "AI Training - AI Made Simple",
+      path: "/ai-made-simple-register.html",
       description:
-        "Analyse market conditions and position organisations in niche and priority areas. Leverage NCVER data and other sources to inform strategy, strengthen market positioning, and support sustainable growth. Includes Sector360 Pulse Check, a free instant market-position report.",
+        "A practical, plain-English session on ChatGPT, Claude, Gemini and Copilot for Territory business owners and their teams. Register your interest — session details coming soon.",
     },
     {
       title: "Tender Writing, Grants & Government Funding Support",
@@ -40,16 +40,15 @@ export default function App() {
         "Trusted advisor to CEOs, Boards and Executives on governance, performance, change management and reform.",
     },
     {
-      title: "AI Training - AI Made Simple",
-      path: "/ai-made-simple-register.html",
+      title: "Sector Positioning & Market Benchmarking",
+      path: "/sector-positioning.html",
       description:
-        "A practical, plain-English session on ChatGPT, Claude, Gemini and Copilot for Territory business owners and their teams. Register your interest — session details coming soon.",
+        "Analyse market conditions and position organisations in niche and priority areas. Leverage NCVER data and other sources to inform strategy, strengthen market positioning, and support sustainable growth. Includes Sector360 Pulse Check, a free instant market-position report.",
     },
   ];
 
   return (
     <div className="min-h-screen bg-slate-950 text-white">
-      {/* HEADER / LOGO */}
       <div className="w-full bg-slate-950 py-6 flex justify-center border-b border-white/10">
         <img
           src="/mhlogo1.png"
@@ -58,9 +57,8 @@ export default function App() {
         />
       </div>
 
-      {/* INTRO BADGE + LINKEDIN */}
-      <div className="flex justify-center mt-6 px-6">
-        <div className="flex items-center gap-3 flex-wrap justify-center">
+      <div className="flex justify-center mt-6">
+        <div className="flex items-center gap-3">
           <div className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs text-slate-200">
             Mike Hamilton | Tender & Grants Specialist | Senior VET Advisor
           </div>
@@ -76,14 +74,13 @@ export default function App() {
         </div>
       </div>
 
-      {/* HERO */}
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="relative mx-auto max-w-7xl px-6 pb-24 pt-12 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-8 items-start">
             <div className="max-w-2xl">
               <h1 className="text-5xl font-semibold sm:text-6xl leading-tight">
-                Helping Organisations Deliver Strategy, Secure Funding, Build
-                Capability and Strengthen Their Workforce
+                Helping Organisations Secure Funding, Deliver Strategy, Build Capability
+                and Workforce Management
               </h1>
 
               <p className="mt-4 text-lg italic text-cyan-300">
@@ -113,7 +110,6 @@ export default function App() {
               </div>
             </div>
 
-            {/* MIKE PROFILE */}
             <div className="flex justify-center lg:justify-start lg:-ml-6">
               <div className="relative mt-2 w-full max-w-md">
                 <div className="absolute top-6 left-1/2 -translate-x-1/2 w-72 h-72 rounded-full bg-cyan-500/20 blur-3xl"></div>
@@ -127,11 +123,7 @@ export default function App() {
                 </div>
 
                 <div className="relative mt-4 z-20">
-                  <svg
-                    viewBox="0 0 500 180"
-                    className="w-full h-auto"
-                    fill="none"
-                  >
+                  <svg viewBox="0 0 500 180" className="w-full h-auto" fill="none">
                     <path
                       d="M20 145 C90 140,120 130,170 120 C220 110,245 115,290 90 C340 62,385 78,470 20"
                       stroke="rgba(34,211,238,0.18)"
@@ -157,11 +149,8 @@ export default function App() {
         </div>
       </section>
 
-      {/* SPECIALISATIONS */}
       <section className="mx-auto max-w-7xl px-6 py-16">
-        <h2 className="text-3xl font-semibold text-center">
-          Specialisations
-        </h2>
+        <h2 className="text-3xl font-semibold text-center">Specialisations</h2>
 
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {services.map((service) => (
@@ -174,9 +163,7 @@ export default function App() {
                 {service.title}
               </h3>
 
-              <p className="mt-4 text-slate-300">
-                {service.description}
-              </p>
+              <p className="mt-4 text-slate-300">{service.description}</p>
 
               <div className="mt-6 inline-flex items-center rounded-full bg-cyan-400 px-5 py-2 text-sm font-semibold text-slate-950 group-hover:bg-white transition">
                 Learn More →
@@ -186,17 +173,13 @@ export default function App() {
         </div>
       </section>
 
-      {/* ENQUIRY */}
-      <section
-        id="enquiry"
-        className="mx-auto max-w-7xl px-6 py-20 text-center"
-      >
+      <section id="enquiry" className="mx-auto max-w-7xl px-6 py-20 text-center">
         <h2 className="text-3xl font-semibold">
           Enquire with Mike
         </h2>
 
         <p className="mt-4 text-slate-300">
-          Please complete the enquiry form below or contact +61 400 465 239.
+          Please complete the enquiry form below or contact +61 0400 465 239.
         </p>
 
         <form
@@ -279,11 +262,23 @@ export default function App() {
         </p>
       </section>
 
-      {/* FOOTER */}
       <footer className="border-t border-white/10 bg-slate-950/80">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-8 text-sm text-slate-400 lg:flex-row lg:items-center lg:justify-between">
           <p>© {new Date().getFullYear()} Mike Hamilton</p>
           <p>ABN 67 680 975 723</p>
+        </div>
+        <div className="mx-auto max-w-7xl px-6 pb-6 text-xs text-slate-500">
+          <p>
+            Powered by{' '}
+            <a
+              href="https://www.positivepopcorn.com.au"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-400 underline hover:text-cyan-300"
+            >
+              Positive Popcorn
+            </a>
+          </p>
         </div>
       </footer>
 
