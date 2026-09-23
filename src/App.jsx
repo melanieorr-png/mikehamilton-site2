@@ -1,45 +1,293 @@
-const services = [
-  {
-    title: "Sector Positioning & Market Benchmarking",
-    path: "/sector-positioning.html",
-    description:
-      "Analyse market conditions and position organisations in niche and priority areas. Leverage NCVER data and other sources to inform strategy, strengthen market positioning, and support sustainable growth. Includes Sector360 Pulse Check, a free instant market-position report.",
-  },
-  {
-    title: "Tender Writing, Grants & Government Funding Support",
-    path: "/tender-writing.html",
-    description:
-      "Strategic support to build capability, navigate tenders and funding processes, and achieve outcomes in complex operating environments.",
-  },
-  {
-    title:
-      "Organisational Performance, Quality Assurance & Sustainable Growth",
-    path: "/organisational-performance.html",
-    description:
-      "Support RTOs and businesses to strengthen performance, improve organisational outcomes, and enhance long-term sustainability.",
-  },
-  {
-    title: "Regional & Remote VET Leadership",
-    path: "/regional-remote.html",
-    description:
-      "Over 25 years delivering high-impact VET across regional, remote and Indigenous communities.",
-  },
-  {
-    title: "National Skills Agreement & Funding Reform",
-    path: "/national-skills-agreement.html",
-    description:
-      "Support organisations to understand government priorities, align with reform settings, and respond to opportunities under the National Skills Agreement and other funding models.",
-  },
-  {
-    title: "Executive Advisory & Board Support",
-    path: "/executive-advisory.html",
-    description:
-      "Trusted advisor to CEOs, Boards and Executives on governance, performance, change management and reform.",
-  },
-  {
-    title: "AI Training - AI Made Simple",
-    path: "/ai-made-simple-register.html",
-    description:
-      "A practical, plain-English session on ChatGPT, Claude, Gemini and Copilot for Territory business owners and their teams. Register your interest — session details coming soon.",
-  },
-];
+import { Analytics } from "@vercel/analytics/react";
+
+export default function App() {
+  const services = [
+    {
+      title: "Sector Positioning & Market Benchmarking",
+      path: "/sector-positioning.html",
+      description:
+        "Analyse market conditions and position organisations in niche and priority areas. Leverage NCVER data and other sources to inform strategy, strengthen market positioning, and support sustainable growth. Includes Sector360 Pulse Check, a free instant market-position report.",
+    },
+    {
+      title: "Tender Writing, Grants & Government Funding Support",
+      path: "/tender-writing.html",
+      description:
+        "Strategic support to build capability, navigate tenders and funding processes, and achieve outcomes in complex operating environments.",
+    },
+    {
+      title:
+        "Organisational Performance, Quality Assurance & Sustainable Growth",
+      path: "/organisational-performance.html",
+      description:
+        "Support RTOs and businesses to strengthen performance, improve organisational outcomes, and enhance long-term sustainability.",
+    },
+    {
+      title: "Regional & Remote VET Leadership",
+      path: "/regional-remote.html",
+      description:
+        "Over 25 years delivering high-impact VET across regional, remote and Indigenous communities.",
+    },
+    {
+      title: "National Skills Agreement & Funding Reform",
+      path: "/national-skills-agreement.html",
+      description:
+        "Support organisations to understand government priorities, align with reform settings, and respond to opportunities under the National Skills Agreement and other funding models.",
+    },
+    {
+      title: "Executive Advisory & Board Support",
+      path: "/executive-advisory.html",
+      description:
+        "Trusted advisor to CEOs, Boards and Executives on governance, performance, change management and reform.",
+    },
+    {
+      title: "AI Training - AI Made Simple",
+      path: "/ai-made-simple-register.html",
+      description:
+        "A practical, plain-English session on ChatGPT, Claude, Gemini and Copilot for Territory business owners and their teams. Register your interest — session details coming soon.",
+    },
+  ];
+
+  return (
+    <div className="min-h-screen bg-slate-950 text-white">
+      {/* HEADER / LOGO */}
+      <div className="w-full bg-slate-950 py-6 flex justify-center border-b border-white/10">
+        <img
+          src="/mhlogo1.png"
+          alt="Mike Hamilton logo"
+          className="h-28 md:h-40"
+        />
+      </div>
+
+      {/* INTRO BADGE + LINKEDIN */}
+      <div className="flex justify-center mt-6 px-6">
+        <div className="flex items-center gap-3 flex-wrap justify-center">
+          <div className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs text-slate-200">
+            Mike Hamilton | Tender & Grants Specialist | Senior VET Advisor
+          </div>
+
+          <a
+            href="https://www.linkedin.com/in/michael-hamilton-bb8794b0/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-cyan-300 hover:underline"
+          >
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      {/* HERO */}
+      <section className="relative overflow-hidden border-b border-white/10">
+        <div className="relative mx-auto max-w-7xl px-6 pb-24 pt-12 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-8 items-start">
+            <div className="max-w-2xl">
+              <h1 className="text-5xl font-semibold sm:text-6xl leading-tight">
+                Helping Organisations Deliver Strategy, Secure Funding, Build
+                Capability and Strengthen Their Workforce
+              </h1>
+
+              <p className="mt-4 text-lg italic text-cyan-300">
+                “I’ve delivered results in some of the most challenging and
+                complex environments across Australia and beyond.”
+              </p>
+
+              <p className="mt-6 text-xl text-slate-300">
+                Helping organisations align with government priorities and
+                deliver high-impact training across Australia.
+              </p>
+
+              <div className="mt-10 flex gap-4 flex-wrap">
+                <a
+                  href="/national-skills-agreement.html"
+                  className="rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-slate-950 hover:bg-cyan-300 transition"
+                >
+                  National Skills Agreement Guide
+                </a>
+
+                <a
+                  href="#enquiry"
+                  className="rounded-2xl border border-white/20 px-6 py-3 text-sm font-semibold text-white hover:border-cyan-300 hover:text-cyan-300 transition"
+                >
+                  Contact Mike
+                </a>
+              </div>
+            </div>
+
+            {/* MIKE PROFILE */}
+            <div className="flex justify-center lg:justify-start lg:-ml-6">
+              <div className="relative mt-2 w-full max-w-md">
+                <div className="absolute top-6 left-1/2 -translate-x-1/2 w-72 h-72 rounded-full bg-cyan-500/20 blur-3xl"></div>
+
+                <div className="relative flex justify-center z-10">
+                  <img
+                    src="/mhprofile.JPG"
+                    alt="Mike Hamilton"
+                    className="w-64 h-64 md:w-72 md:h-72 object-cover rounded-full border-4 border-white/10 shadow-2xl"
+                  />
+                </div>
+
+                <div className="relative mt-4 z-20">
+                  <svg
+                    viewBox="0 0 500 180"
+                    className="w-full h-auto"
+                    fill="none"
+                  >
+                    <path
+                      d="M20 145 C90 140,120 130,170 120 C220 110,245 115,290 90 C340 62,385 78,470 20"
+                      stroke="rgba(34,211,238,0.18)"
+                      strokeWidth="18"
+                      strokeLinecap="round"
+                    />
+
+                    <path
+                      d="M20 145 C90 140,120 130,170 120 C220 110,245 115,290 90 C340 62,385 78,470 20"
+                      stroke="rgb(34,211,238)"
+                      strokeWidth="4"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                </div>
+
+                <p className="text-center text-sm text-slate-400 mt-2">
+                  Strategy. Performance. Growth.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SPECIALISATIONS */}
+      <section className="mx-auto max-w-7xl px-6 py-16">
+        <h2 className="text-3xl font-semibold text-center">
+          Specialisations
+        </h2>
+
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
+          {services.map((service) => (
+            <a
+              key={service.title}
+              href={service.path}
+              className="group rounded-2xl border border-white/10 p-8 bg-slate-900/50 hover:border-cyan-300/50 hover:shadow-xl hover:shadow-cyan-500/10 hover:-translate-y-1 transition-all duration-300"
+            >
+              <h3 className="text-xl font-semibold group-hover:text-cyan-300 transition">
+                {service.title}
+              </h3>
+
+              <p className="mt-4 text-slate-300">
+                {service.description}
+              </p>
+
+              <div className="mt-6 inline-flex items-center rounded-full bg-cyan-400 px-5 py-2 text-sm font-semibold text-slate-950 group-hover:bg-white transition">
+                Learn More →
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+
+      {/* ENQUIRY */}
+      <section
+        id="enquiry"
+        className="mx-auto max-w-7xl px-6 py-20 text-center"
+      >
+        <h2 className="text-3xl font-semibold">
+          Enquire with Mike
+        </h2>
+
+        <p className="mt-4 text-slate-300">
+          Please complete the enquiry form below or contact +61 400 465 239.
+        </p>
+
+        <form
+          action="https://formspree.io/f/xvznbrpn"
+          method="POST"
+          className="mt-8 max-w-2xl mx-auto space-y-4"
+        >
+          <select
+            name="enquiryType"
+            required
+            className="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
+          >
+            <option value="">Select Enquiry Type</option>
+            <option>General Enquiry</option>
+            <option>Tender Writing & Grants</option>
+            <option>National Skills Agreement</option>
+            <option>Regional & Remote VET</option>
+            <option>Executive Advisory</option>
+            <option>Workforce Planning</option>
+            <option>Speaking Engagement</option>
+            <option>Partnership Opportunity</option>
+          </select>
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            required
+            className="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
+          />
+
+          <input
+            type="text"
+            name="organisation"
+            placeholder="Organisation"
+            className="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
+          />
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+            className="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
+          />
+
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number (optional)"
+            className="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
+          />
+
+          <textarea
+            name="message"
+            rows="6"
+            placeholder="Tell Mike about your enquiry..."
+            required
+            className="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
+          ></textarea>
+
+          <button
+            type="submit"
+            className="rounded-2xl bg-white px-8 py-4 text-sm font-semibold text-slate-950 hover:bg-cyan-300 transition"
+          >
+            Send Enquiry
+          </button>
+        </form>
+
+        <p className="mt-6 text-sm text-slate-400">
+          Prefer to connect professionally?{" "}
+          <a
+            href="https://www.linkedin.com/in/michael-hamilton-bb8794b0/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-cyan-300 hover:underline"
+          >
+            View Mike’s LinkedIn profile
+          </a>
+        </p>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="border-t border-white/10 bg-slate-950/80">
+        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-8 text-sm text-slate-400 lg:flex-row lg:items-center lg:justify-between">
+          <p>© {new Date().getFullYear()} Mike Hamilton</p>
+          <p>ABN 67 680 975 723</p>
+        </div>
+      </footer>
+
+      <Analytics />
+    </div>
+  );
+}
