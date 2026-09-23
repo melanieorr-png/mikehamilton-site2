@@ -3,10 +3,10 @@ import { Analytics } from "@vercel/analytics/react";
 export default function App() {
   const services = [
     {
-      title: "AI Training - AI Made Simple",
-      path: "/ai-made-simple-register.html",
+      title: "Sector Positioning & Market Benchmarking",
+      path: "/sector-positioning.html",
       description:
-        "A practical, plain-English session on ChatGPT, Claude, Gemini and Copilot for Territory business owners and their teams. Register your interest — session details coming soon.",
+        "Analyse market conditions and position organisations in niche and priority areas. Leverage NCVER data and other sources to inform strategy, strengthen market positioning, and support sustainable growth. Includes Sector360 Pulse Check, a free instant market-position report.",
     },
     {
       title: "Tender Writing, Grants & Government Funding Support",
@@ -40,10 +40,10 @@ export default function App() {
         "Trusted advisor to CEOs, Boards and Executives on governance, performance, change management and reform.",
     },
     {
-      title: "Sector Positioning & Market Benchmarking",
-      path: "/sector-positioning.html",
+      title: "AI Training - AI Made Simple",
+      path: "/ai-made-simple-register.html",
       description:
-        "Analyse market conditions and position organisations in niche and priority areas. Leverage NCVER data and other sources to inform strategy, strengthen market positioning, and support sustainable growth. Includes Sector360 Pulse Check, a free instant market-position report.",
+        "A practical, plain-English session on ChatGPT, Claude, Gemini and Copilot for Territory business owners and their teams. Register your interest — session details coming soon.",
     },
   ];
 
@@ -79,8 +79,8 @@ export default function App() {
           <div className="grid lg:grid-cols-2 gap-8 items-start">
             <div className="max-w-2xl">
               <h1 className="text-5xl font-semibold sm:text-6xl leading-tight">
-                Helping Organisations Deliver Strategy, Secure Funding, Build Capability
-                and Strengthen Workforce
+                Helping Organisations Secure Funding, Deliver Strategy, Build Capability
+                and Workforce Management
               </h1>
 
               <p className="mt-4 text-lg italic text-cyan-300">
