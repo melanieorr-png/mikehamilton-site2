@@ -80,7 +80,7 @@ export default function App() {
             <div className="max-w-2xl">
               <h1 className="text-5xl font-semibold sm:text-6xl leading-tight">
                 Helping Organisations Deliver Strategy, Secure Funding, Build Capability
-                and Workforce Management
+                and Strengthen Their Workforce
               </h1>
 
               <p className="mt-4 text-lg italic text-cyan-300">
