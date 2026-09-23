@@ -79,8 +79,8 @@ export default function App() {
           <div className="grid lg:grid-cols-2 gap-8 items-start">
             <div className="max-w-2xl">
               <h1 className="text-5xl font-semibold sm:text-6xl leading-tight">
-                Helping Organisations Secure Funding, Deliver Strategy, Build Capability
-                and Workforce Management
+                Helping Organisations Deliver Strategy, Secure Funding, Build Capability
+                and Strengthen Workforce
               </h1>
 
               <p className="mt-4 text-lg italic text-cyan-300">
