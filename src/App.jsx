@@ -43,7 +43,7 @@ export default function App() {
       title: "Sector Positioning & Market Benchmarking",
       path: "/sector-positioning.html",
       description:
-        "Analyse market conditions and position organisations in niche and priority areas. Leverage NCVER data and other sources to inform strategy, strengthen market positioning, and support sustainable growth.",
+        "Analyse market conditions and position organisations in niche and priority areas. Leverage NCVER data and other sources to inform strategy, strengthen market positioning, and support sustainable growth. Includes Sector360 Pulse Check, a free instant market-position report.",
     },
   ];
 
