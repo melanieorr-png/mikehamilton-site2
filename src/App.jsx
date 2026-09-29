@@ -4,7 +4,7 @@ export default function App() {
   const services = [
     {
       title: "Leadership & Training",
-      path: "/training-register.html",
+      path: "/leadership-training.html",
       description:
         "Practical leadership, AI and workforce development training for individual and business owners and their teams. Register your interest in the programs that matter most to you.",
     },
@@ -80,7 +80,7 @@ export default function App() {
             <div className="max-w-2xl">
               <h1 className="text-5xl font-semibold sm:text-6xl leading-tight">
                 Helping Organisations Deliver Strategy, Secure Funding, Build Capability
-                and Strengthen Their Workforce
+                and Strengthen Their Workforce Management
               </h1>
 
               <p className="mt-4 text-lg italic text-cyan-300">
