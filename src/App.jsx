@@ -1,6 +1,9 @@
 import { Analytics } from "@vercel/analytics/react";
+import { useForm } from "@formspree/react";
 
 export default function App() {
+  const [enquiryState, handleEnquirySubmit] = useForm("xvznbrpn");
+
   const services = [
     {
       title: "Leadership & Training",
@@ -80,7 +83,7 @@ export default function App() {
             <div className="max-w-2xl">
               <h1 className="text-5xl font-semibold sm:text-6xl leading-tight">
                 Helping Organisations Deliver Strategy, Secure Funding, Build Capability
-                and Strengthen Their Workforce Management
+                and Workforce Management
               </h1>
 
               <p className="mt-4 text-lg italic text-cyan-300">
@@ -182,72 +185,87 @@ export default function App() {
           Please complete the enquiry form below or contact +61 0400 465 239.
         </p>
 
-        <form
-          action="https://formspree.io/f/xvznbrpn"
-          method="POST"
-          className="mt-8 max-w-2xl mx-auto space-y-4"
-        >
-          <select
-            name="enquiryType"
-            required
-            className="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
+        {enquiryState.succeeded ? (
+          <div className="mt-8 max-w-2xl mx-auto rounded-2xl border border-white/10 bg-slate-900/50 p-8 text-left">
+            <h3 className="text-xl font-semibold text-cyan-300">Thank you!</h3>
+            <p className="mt-2 text-slate-300">
+              Your message has landed. Mike will be in touch soon.
+            </p>
+          </div>
+        ) : (
+          <form
+            onSubmit={handleEnquirySubmit}
+            className="mt-8 max-w-2xl mx-auto space-y-4"
           >
-            <option value="">Select Enquiry Type</option>
-            <option>General Enquiry</option>
-            <option>Tender Writing & Grants</option>
-            <option>National Skills Agreement</option>
-            <option>Regional & Remote VET</option>
-            <option>Executive Advisory</option>
-            <option>Workforce Planning</option>
-            <option>Speaking Engagement</option>
-            <option>Partnership Opportunity</option>
-          </select>
+            <select
+              name="enquiryType"
+              required
+              className="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
+            >
+              <option value="">Select Enquiry Type</option>
+              <option>General Enquiry</option>
+              <option>Tender Writing & Grants</option>
+              <option>National Skills Agreement</option>
+              <option>Regional & Remote VET</option>
+              <option>Executive Advisory</option>
+              <option>Workforce Planning</option>
+              <option>Speaking Engagement</option>
+              <option>Partnership Opportunity</option>
+            </select>
 
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-            className="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
-          />
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+              className="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
+            />
 
-          <input
-            type="text"
-            name="organisation"
-            placeholder="Organisation"
-            className="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
-          />
+            <input
+              type="text"
+              name="organisation"
+              placeholder="Organisation"
+              className="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
+            />
 
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            required
-            className="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
-          />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              required
+              className="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
+            />
 
-          <input
-            type="tel"
-            name="phone"
-            placeholder="Phone Number (optional)"
-            className="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
-          />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone Number (optional)"
+              className="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
+            />
 
-          <textarea
-            name="message"
-            rows="6"
-            placeholder="Tell Mike about your enquiry..."
-            required
-            className="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
-          ></textarea>
+            <textarea
+              name="message"
+              rows="6"
+              placeholder="Tell Mike about your enquiry..."
+              required
+              className="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
+            ></textarea>
 
-          <button
-            type="submit"
-            className="rounded-2xl bg-white px-8 py-4 text-sm font-semibold text-slate-950 hover:bg-cyan-300 transition"
-          >
-            Send Enquiry
-          </button>
-        </form>
+            {enquiryState.errors && enquiryState.errors.length > 0 && (
+              <p className="text-sm text-red-300">
+                Something went wrong. Please try again or call +61 0400 465 239.
+              </p>
+            )}
+
+            <button
+              type="submit"
+              disabled={enquiryState.submitting}
+              className="rounded-2xl bg-white px-8 py-4 text-sm font-semibold text-slate-950 hover:bg-cyan-300 transition disabled:opacity-60 disabled:cursor-not-allowed"
+            >
+              {enquiryState.submitting ? "Sending…" : "Send Enquiry"}
+            </button>
+          </form>
+        )}
 
         <p className="mt-6 text-sm text-slate-400">
           Prefer to connect professionally?{" "}
