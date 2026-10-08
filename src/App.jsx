@@ -1,8 +1,34 @@
+import { useState } from "react";
 import { Analytics } from "@vercel/analytics/react";
-import { useForm } from "@formspree/react";
 
 export default function App() {
-  const [enquiryState, handleEnquirySubmit] = useForm("xvznbrpn");
+  const [enquirySubmitting, setEnquirySubmitting] = useState(false);
+  const [enquirySucceeded, setEnquirySucceeded] = useState(false);
+  const [enquiryFailed, setEnquiryFailed] = useState(false);
+
+  const handleEnquirySubmit = async (e) => {
+    e.preventDefault();
+    setEnquiryFailed(false);
+    setEnquirySubmitting(true);
+
+    try {
+      const response = await fetch("https://formspree.io/f/xvznbrpn", {
+        method: "POST",
+        body: new FormData(e.target),
+        headers: { Accept: "application/json" },
+      });
+
+      if (response.ok) {
+        setEnquirySucceeded(true);
+      } else {
+        setEnquiryFailed(true);
+      }
+    } catch (err) {
+      setEnquiryFailed(true);
+    } finally {
+      setEnquirySubmitting(false);
+    }
+  };
 
   const services = [
     {
@@ -185,7 +211,7 @@ export default function App() {
           Please complete the enquiry form below or contact +61 0400 465 239.
         </p>
 
-        {enquiryState.succeeded ? (
+        {enquirySucceeded ? (
           <div className="mt-8 max-w-2xl mx-auto rounded-2xl border border-white/10 bg-slate-900/50 p-8 text-left">
             <h3 className="text-xl font-semibold text-cyan-300">Thank you!</h3>
             <p className="mt-2 text-slate-300">
@@ -251,7 +277,7 @@ export default function App() {
               className="w-full rounded-xl border border-white/10 bg-slate-900 p-4 text-white"
             ></textarea>
 
-            {enquiryState.errors && enquiryState.errors.length > 0 && (
+            {enquiryFailed && (
               <p className="text-sm text-red-300">
                 Something went wrong. Please try again or call +61 0400 465 239.
               </p>
@@ -259,10 +285,10 @@ export default function App() {
 
             <button
               type="submit"
-              disabled={enquiryState.submitting}
+              disabled={enquirySubmitting}
               className="rounded-2xl bg-white px-8 py-4 text-sm font-semibold text-slate-950 hover:bg-cyan-300 transition disabled:opacity-60 disabled:cursor-not-allowed"
             >
-              {enquiryState.submitting ? "Sending…" : "Send Enquiry"}
+              {enquirySubmitting ? "Sending…" : "Send Enquiry"}
             </button>
           </form>
         )}
